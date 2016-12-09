@@ -17,9 +17,10 @@
 package kamon.trace
 
 import java.util
+import java.util.function.Supplier
 
 import akka.actor._
-import akka.event.{ Logging, LoggingAdapter }
+import akka.event.{Logging, LoggingAdapter}
 import com.typesafe.config.Config
 import kamon.Kamon
 import kamon.metric.MetricsModule

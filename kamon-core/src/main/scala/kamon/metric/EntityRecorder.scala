@@ -1,6 +1,6 @@
 /*
  * =========================================================================================
- * Copyright © 2013-2015 the kamon project <http://kamon.io/>
+ * Copyright © 2013-2016 the kamon project <http://kamon.io/>
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file
  * except in compliance with the License. You may obtain a copy of the License at
@@ -19,7 +19,6 @@ package kamon.metric
 import kamon.metric.instrument.Gauge.CurrentValueCollector
 import kamon.metric.instrument.Histogram.DynamicRange
 import kamon.metric.instrument._
-import kamon.util.Function
 
 import scala.collection.concurrent.TrieMap
 import scala.concurrent.duration.FiniteDuration
@@ -59,7 +58,7 @@ private[kamon] sealed trait SingleInstrumentEntityRecorder extends EntityRecorde
   def instrument: Instrument
 
   def collect(collectionContext: CollectionContext): EntitySnapshot =
-    new DefaultEntitySnapshot(Map(key -> instrument.collect(collectionContext)))
+    new DefaultEntitySnapshot(Map(key → instrument.collect(collectionContext)))
 
   def cleanup: Unit = instrument.cleanup
 }
@@ -99,11 +98,10 @@ case class GaugeRecorder(key: MetricKey, instrument: Gauge) extends SingleInstru
  *  the most convenient way to do it and the preferred approach throughout the Kamon codebase.
  */
 abstract class GenericEntityRecorder(instrumentFactory: InstrumentFactory) extends EntityRecorder {
-  import kamon.util.TriemapAtomicGetOrElseUpdate.Syntax
 
   private val _instruments = TrieMap.empty[MetricKey, Instrument]
   private def register[T <: Instrument](key: MetricKey, instrument: ⇒ T): T =
-    _instruments.atomicGetOrElseUpdate(key, instrument, _.cleanup).asInstanceOf[T]
+    _instruments.getOrElseUpdate(key, instrument).asInstanceOf[T]
 
   protected def histogram(name: String): Histogram =
     register(HistogramKey(name, UnitOfMeasurement.Unknown), instrumentFactory.createHistogram(name))
@@ -225,7 +223,7 @@ abstract class GenericEntityRecorder(instrumentFactory: InstrumentFactory) exten
   def collect(collectionContext: CollectionContext): EntitySnapshot = {
     val snapshots = Map.newBuilder[MetricKey, InstrumentSnapshot]
     _instruments.foreach {
-      case (key, instrument) ⇒ snapshots += key -> instrument.collect(collectionContext)
+      case (key, instrument) ⇒ snapshots += key → instrument.collect(collectionContext)
     }
 
     new DefaultEntitySnapshot(snapshots.result())

@@ -18,10 +18,12 @@ package kamon.trace
 
 import java.io.ObjectStreamException
 import java.util
+import java.util.function.Supplier
+import java.util.function.{Function ⇒ JFunction}
 
 import kamon.trace.Status.Closed
 import kamon.trace.TraceContextAware.DefaultTraceContextAware
-import kamon.util.{ Function, RelativeNanoTimestamp, SameThreadExecutionContext, Supplier }
+import kamon.util.{RelativeNanoTimestamp, SameThreadExecutionContext}
 
 import scala.concurrent.Future
 
@@ -38,7 +40,7 @@ trait TraceContext {
   def rename(newName: String): Unit
   def startSegment(segmentName: String, category: String, library: String): Segment
   def startSegment(segmentName: String, category: String, library: String, tags: Map[String, String]): Segment
-  def addMetadata(key: String, value: String)
+  def addMetadata(key: String, value: String): Unit
   def addTag(key: String, value: String): Unit
   def removeTag(key: String, value: String): Boolean
   def startTimestamp: RelativeNanoTimestamp
@@ -48,7 +50,7 @@ trait TraceContext {
       Some(f(this))
     else None
 
-  def collect[T](f: Function[TraceContext, T]): Option[T] =
+  def collect[T](f: JFunction[TraceContext, T]): Option[T] =
     if (nonEmpty)
       Some(f(this))
     else None
