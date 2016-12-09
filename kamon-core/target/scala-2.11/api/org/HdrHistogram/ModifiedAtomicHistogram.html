@@ -1,0 +1,1700 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>ModifiedAtomicHistogram - org.HdrHistogram.ModifiedAtomicHistogram</title>
+          <meta name="description" content="ModifiedAtomicHistogram - org.HdrHistogram.ModifiedAtomicHistogram" />
+          <meta name="keywords" content="ModifiedAtomicHistogram org.HdrHistogram.ModifiedAtomicHistogram" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../index.html';
+            var hash = 'org.HdrHistogram.ModifiedAtomicHistogram';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="type">
+      <div id="definition">
+        <img alt="Class" src="../../lib/class_big.png" />
+        <p id="owner"><a href="../package.html" class="extype" name="org">org</a>.<a href="package.html" class="extype" name="org.HdrHistogram">HdrHistogram</a></p>
+        <h1>ModifiedAtomicHistogram</h1><h3><span class="morelinks"><div>Related Doc:
+            <a href="package.html" class="extype" name="org.HdrHistogram">package HdrHistogram</a>
+          </div></span></h3><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ModifiedAtomicHistogram</span><span class="result"> extends <span class="extype" name="org.HdrHistogram.AtomicHistogram">AtomicHistogram</span></span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Self Type</dt><dd><a href="" class="extype" name="org.HdrHistogram.ModifiedAtomicHistogram">ModifiedAtomicHistogram</a></dd></dl><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><span class="extype" name="org.HdrHistogram.AtomicHistogram">AtomicHistogram</span>, <span class="extype" name="org.HdrHistogram.Histogram">Histogram</span>, <span class="extype" name="org.HdrHistogram.AbstractHistogram">AbstractHistogram</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="org.HdrHistogram.AbstractHistogramBase">AbstractHistogramBase</span>, <span class="extype" name="org.HdrHistogram.EncodableHistogram">EncodableHistogram</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div><div class="toggleContainer block">
+            <span class="toggle">Known Subclasses</span>
+            <div class="subClasses hiddenContent"><a href="../../kamon/metric/instrument/HdrHistogram.html" class="extype" name="kamon.metric.instrument.HdrHistogram">HdrHistogram</a></div>
+          </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By Inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="org.HdrHistogram.ModifiedAtomicHistogram"><span>ModifiedAtomicHistogram</span></li><li class="in" name="org.HdrHistogram.AtomicHistogram"><span>AtomicHistogram</span></li><li class="in" name="org.HdrHistogram.Histogram"><span>Histogram</span></li><li class="in" name="org.HdrHistogram.AbstractHistogram"><span>AbstractHistogram</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="org.HdrHistogram.AbstractHistogramBase"><span>AbstractHistogramBase</span></li><li class="in" name="org.HdrHistogram.EncodableHistogram"><span>EncodableHistogram</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show All</span></li>
+            </ol>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        <div id="constructors" class="members">
+              <h3>Instance Constructors</h3>
+              <ol><li name="org.HdrHistogram.ModifiedAtomicHistogram#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;(low:Long,high:Long,precision:Int):org.HdrHistogram.ModifiedAtomicHistogram"></a>
+      <a id="&lt;init&gt;:ModifiedAtomicHistogram"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">new</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ModifiedAtomicHistogram</span><span class="params">(<span name="low">low: <span class="extype" name="scala.Long">Long</span></span>, <span name="high">high: <span class="extype" name="scala.Long">Long</span></span>, <span name="precision">precision: <span class="extype" name="scala.Int">Int</span></span>)</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@&lt;init&gt;(low:Long,high:Long,precision:Int):org.HdrHistogram.ModifiedAtomicHistogram" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="org.HdrHistogram.AbstractHistogram.AllValues" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="AllValuesextendsIterable[org.HdrHistogram.HistogramIterationValue]"></a>
+      <a id="AllValues:AllValues"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">AllValues</span><span class="result"> extends <span class="extype" name="java.lang.Iterable">Iterable</span>[<span class="extype" name="org.HdrHistogram.HistogramIterationValue">HistogramIterationValue</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@AllValuesextendsIterable[org.HdrHistogram.HistogramIterationValue]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram</dd></dl></div>
+    </li><li name="org.HdrHistogram.AbstractHistogram.LinearBucketValues" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="LinearBucketValuesextendsIterable[org.HdrHistogram.HistogramIterationValue]"></a>
+      <a id="LinearBucketValues:LinearBucketValues"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">LinearBucketValues</span><span class="result"> extends <span class="extype" name="java.lang.Iterable">Iterable</span>[<span class="extype" name="org.HdrHistogram.HistogramIterationValue">HistogramIterationValue</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@LinearBucketValuesextendsIterable[org.HdrHistogram.HistogramIterationValue]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram</dd></dl></div>
+    </li><li name="org.HdrHistogram.AbstractHistogram.LogarithmicBucketValues" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="LogarithmicBucketValuesextendsIterable[org.HdrHistogram.HistogramIterationValue]"></a>
+      <a id="LogarithmicBucketValues:LogarithmicBucketValues"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">LogarithmicBucketValues</span><span class="result"> extends <span class="extype" name="java.lang.Iterable">Iterable</span>[<span class="extype" name="org.HdrHistogram.HistogramIterationValue">HistogramIterationValue</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@LogarithmicBucketValuesextendsIterable[org.HdrHistogram.HistogramIterationValue]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram</dd></dl></div>
+    </li><li name="org.HdrHistogram.AbstractHistogram.Percentiles" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="PercentilesextendsIterable[org.HdrHistogram.HistogramIterationValue]"></a>
+      <a id="Percentiles:Percentiles"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Percentiles</span><span class="result"> extends <span class="extype" name="java.lang.Iterable">Iterable</span>[<span class="extype" name="org.HdrHistogram.HistogramIterationValue">HistogramIterationValue</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@PercentilesextendsIterable[org.HdrHistogram.HistogramIterationValue]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram</dd></dl></div>
+    </li><li name="org.HdrHistogram.AbstractHistogram.RecordedValues" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="RecordedValuesextendsIterable[org.HdrHistogram.HistogramIterationValue]"></a>
+      <a id="RecordedValues:RecordedValues"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">RecordedValues</span><span class="result"> extends <span class="extype" name="java.lang.Iterable">Iterable</span>[<span class="extype" name="org.HdrHistogram.HistogramIterationValue">HistogramIterationValue</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@RecordedValuesextendsIterable[org.HdrHistogram.HistogramIterationValue]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram</dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@##():Int" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="org.HdrHistogram.AbstractHistogram#add" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="add(x$1:org.HdrHistogram.AbstractHistogram):Unit"></a>
+      <a id="add(AbstractHistogram):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">add</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.HdrHistogram.AbstractHistogram">AbstractHistogram</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@add(x$1:org.HdrHistogram.AbstractHistogram):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.ArrayIndexOutOfBoundsException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="org.HdrHistogram.ModifiedAtomicHistogram#addToTotalCount" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="addToTotalCount(value:Long):Unit"></a>
+      <a id="addToTotalCount(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addToTotalCount</span><span class="params">(<span name="value">value: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@addToTotalCount(value:Long):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.HdrHistogram.ModifiedAtomicHistogram">ModifiedAtomicHistogram</a> → AtomicHistogram → Histogram → AbstractHistogram</dd></dl></div>
+    </li><li name="org.HdrHistogram.AbstractHistogram#addWhileCorrectingForCoordinatedOmission" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="addWhileCorrectingForCoordinatedOmission(x$1:org.HdrHistogram.AbstractHistogram,x$2:Long):Unit"></a>
+      <a id="addWhileCorrectingForCoordinatedOmission(AbstractHistogram,Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addWhileCorrectingForCoordinatedOmission</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.HdrHistogram.AbstractHistogram">AbstractHistogram</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@addWhileCorrectingForCoordinatedOmission(x$1:org.HdrHistogram.AbstractHistogram,x$2:Long):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram</dd></dl></div>
+    </li><li name="org.HdrHistogram.AbstractHistogram#allValues" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="allValues():org.HdrHistogram.AbstractHistogram#AllValues"></a>
+      <a id="allValues():AllValues"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">allValues</span><span class="params">()</span><span class="result">: <span class="extype" name="org.HdrHistogram.AbstractHistogram.AllValues">AllValues</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@allValues():org.HdrHistogram.AbstractHistogram#AllValues" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram</dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@clone():Object" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="org.HdrHistogram.AtomicHistogram#copy" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="copy():org.HdrHistogram.AtomicHistogram"></a>
+      <a id="copy():AtomicHistogram"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">copy</span><span class="params">()</span><span class="result">: <span class="extype" name="org.HdrHistogram.AtomicHistogram">AtomicHistogram</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@copy():org.HdrHistogram.AtomicHistogram" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AtomicHistogram → Histogram → AbstractHistogram</dd></dl></div>
+    </li><li name="org.HdrHistogram.AtomicHistogram#copyCorrectedForCoordinatedOmission" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="copyCorrectedForCoordinatedOmission(x$1:Long):org.HdrHistogram.AtomicHistogram"></a>
+      <a id="copyCorrectedForCoordinatedOmission(Long):AtomicHistogram"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">copyCorrectedForCoordinatedOmission</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="org.HdrHistogram.AtomicHistogram">AtomicHistogram</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@copyCorrectedForCoordinatedOmission(x$1:Long):org.HdrHistogram.AtomicHistogram" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AtomicHistogram → Histogram → AbstractHistogram</dd></dl></div>
+    </li><li name="org.HdrHistogram.AbstractHistogram#copyInto" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="copyInto(x$1:org.HdrHistogram.AbstractHistogram):Unit"></a>
+      <a id="copyInto(AbstractHistogram):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">copyInto</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.HdrHistogram.AbstractHistogram">AbstractHistogram</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@copyInto(x$1:org.HdrHistogram.AbstractHistogram):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram</dd></dl></div>
+    </li><li name="org.HdrHistogram.AbstractHistogram#copyIntoCorrectedForCoordinatedOmission" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="copyIntoCorrectedForCoordinatedOmission(x$1:org.HdrHistogram.AbstractHistogram,x$2:Long):Unit"></a>
+      <a id="copyIntoCorrectedForCoordinatedOmission(AbstractHistogram,Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">copyIntoCorrectedForCoordinatedOmission</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.HdrHistogram.AbstractHistogram">AbstractHistogram</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@copyIntoCorrectedForCoordinatedOmission(x$1:org.HdrHistogram.AbstractHistogram,x$2:Long):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram</dd></dl></div>
+    </li><li name="org.HdrHistogram.ModifiedAtomicHistogram#countsArray" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="countsArray():java.util.concurrent.atomic.AtomicLongArray"></a>
+      <a id="countsArray():AtomicLongArray"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">countsArray</span><span class="params">()</span><span class="result">: <span class="extype" name="java.util.concurrent.atomic.AtomicLongArray">AtomicLongArray</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@countsArray():java.util.concurrent.atomic.AtomicLongArray" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.HdrHistogram.AbstractHistogram#encodeIntoByteBuffer" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="encodeIntoByteBuffer(x$1:java.nio.ByteBuffer):Int"></a>
+      <a id="encodeIntoByteBuffer(ByteBuffer):Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">encodeIntoByteBuffer</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="java.nio.ByteBuffer">ByteBuffer</span></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@encodeIntoByteBuffer(x$1:java.nio.ByteBuffer):Int" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram</dd></dl></div>
+    </li><li name="org.HdrHistogram.AbstractHistogram#encodeIntoCompressedByteBuffer" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="encodeIntoCompressedByteBuffer(x$1:java.nio.ByteBuffer):Int"></a>
+      <a id="encodeIntoCompressedByteBuffer(ByteBuffer):Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">encodeIntoCompressedByteBuffer</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="java.nio.ByteBuffer">ByteBuffer</span></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@encodeIntoCompressedByteBuffer(x$1:java.nio.ByteBuffer):Int" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram</dd></dl></div>
+    </li><li name="org.HdrHistogram.AbstractHistogram#encodeIntoCompressedByteBuffer" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="encodeIntoCompressedByteBuffer(x$1:java.nio.ByteBuffer,x$2:Int):Int"></a>
+      <a id="encodeIntoCompressedByteBuffer(ByteBuffer,Int):Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">encodeIntoCompressedByteBuffer</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="java.nio.ByteBuffer">ByteBuffer</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@encodeIntoCompressedByteBuffer(x$1:java.nio.ByteBuffer,x$2:Int):Int" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram → EncodableHistogram</dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="org.HdrHistogram.AbstractHistogram#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a>
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram → AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="org.HdrHistogram.AbstractHistogram#getCountAtValue" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getCountAtValue(x$1:Long):Long"></a>
+      <a id="getCountAtValue(Long):Long"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getCountAtValue</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Long">Long</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@getCountAtValue(x$1:Long):Long" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.ArrayIndexOutOfBoundsException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="org.HdrHistogram.AbstractHistogram#getCountBetweenValues" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getCountBetweenValues(x$1:Long,x$2:Long):Long"></a>
+      <a id="getCountBetweenValues(Long,Long):Long"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getCountBetweenValues</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Long">Long</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@getCountBetweenValues(x$1:Long,x$2:Long):Long" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.ArrayIndexOutOfBoundsException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="org.HdrHistogram.AbstractHistogram#getEndTimeStamp" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getEndTimeStamp():Long"></a>
+      <a id="getEndTimeStamp():Long"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getEndTimeStamp</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Long">Long</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@getEndTimeStamp():Long" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram → EncodableHistogram</dd></dl></div>
+    </li><li name="org.HdrHistogram.AbstractHistogram#getEstimatedFootprintInBytes" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getEstimatedFootprintInBytes():Int"></a>
+      <a id="getEstimatedFootprintInBytes():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getEstimatedFootprintInBytes</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@getEstimatedFootprintInBytes():Int" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram</dd></dl></div>
+    </li><li name="org.HdrHistogram.AbstractHistogram#getHighestTrackableValue" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getHighestTrackableValue():Long"></a>
+      <a id="getHighestTrackableValue():Long"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getHighestTrackableValue</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Long">Long</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@getHighestTrackableValue():Long" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram</dd></dl></div>
+    </li><li name="org.HdrHistogram.AbstractHistogram#getLowestDiscernibleValue" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getLowestDiscernibleValue():Long"></a>
+      <a id="getLowestDiscernibleValue():Long"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getLowestDiscernibleValue</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Long">Long</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@getLowestDiscernibleValue():Long" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram</dd></dl></div>
+    </li><li name="org.HdrHistogram.AbstractHistogram#getMaxValue" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getMaxValue():Long"></a>
+      <a id="getMaxValue():Long"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getMaxValue</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Long">Long</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@getMaxValue():Long" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram</dd></dl></div>
+    </li><li name="org.HdrHistogram.AbstractHistogram#getMaxValueAsDouble" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getMaxValueAsDouble():Double"></a>
+      <a id="getMaxValueAsDouble():Double"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getMaxValueAsDouble</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@getMaxValueAsDouble():Double" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram → EncodableHistogram</dd></dl></div>
+    </li><li name="org.HdrHistogram.AbstractHistogram#getMean" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getMean():Double"></a>
+      <a id="getMean():Double"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getMean</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@getMean():Double" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram</dd></dl></div>
+    </li><li name="org.HdrHistogram.AbstractHistogram#getMinNonZeroValue" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getMinNonZeroValue():Long"></a>
+      <a id="getMinNonZeroValue():Long"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getMinNonZeroValue</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Long">Long</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@getMinNonZeroValue():Long" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram</dd></dl></div>
+    </li><li name="org.HdrHistogram.AbstractHistogram#getMinValue" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getMinValue():Long"></a>
+      <a id="getMinValue():Long"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getMinValue</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Long">Long</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@getMinValue():Long" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram</dd></dl></div>
+    </li><li name="org.HdrHistogram.AbstractHistogram#getNeededByteBufferCapacity" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getNeededByteBufferCapacity():Int"></a>
+      <a id="getNeededByteBufferCapacity():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getNeededByteBufferCapacity</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@getNeededByteBufferCapacity():Int" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram → EncodableHistogram</dd></dl></div>
+    </li><li name="org.HdrHistogram.AbstractHistogram#getNumberOfSignificantValueDigits" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getNumberOfSignificantValueDigits():Int"></a>
+      <a id="getNumberOfSignificantValueDigits():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getNumberOfSignificantValueDigits</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@getNumberOfSignificantValueDigits():Int" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram</dd></dl></div>
+    </li><li name="org.HdrHistogram.AbstractHistogram#getPercentileAtOrBelowValue" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getPercentileAtOrBelowValue(x$1:Long):Double"></a>
+      <a id="getPercentileAtOrBelowValue(Long):Double"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getPercentileAtOrBelowValue</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@getPercentileAtOrBelowValue(x$1:Long):Double" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram</dd></dl></div>
+    </li><li name="org.HdrHistogram.AbstractHistogram#getStartTimeStamp" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getStartTimeStamp():Long"></a>
+      <a id="getStartTimeStamp():Long"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getStartTimeStamp</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Long">Long</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@getStartTimeStamp():Long" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram → EncodableHistogram</dd></dl></div>
+    </li><li name="org.HdrHistogram.AbstractHistogram#getStdDeviation" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getStdDeviation():Double"></a>
+      <a id="getStdDeviation():Double"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getStdDeviation</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@getStdDeviation():Double" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram</dd></dl></div>
+    </li><li name="org.HdrHistogram.AbstractHistogram#getTag" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getTag():String"></a>
+      <a id="getTag():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getTag</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@getTag():String" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram → EncodableHistogram</dd></dl></div>
+    </li><li name="org.HdrHistogram.AtomicHistogram#getTotalCount" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getTotalCount():Long"></a>
+      <a id="getTotalCount():Long"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getTotalCount</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Long">Long</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@getTotalCount():Long" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AtomicHistogram → Histogram → AbstractHistogram</dd></dl></div>
+    </li><li name="org.HdrHistogram.AbstractHistogram#getValueAtPercentile" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getValueAtPercentile(x$1:Double):Long"></a>
+      <a id="getValueAtPercentile(Double):Long"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getValueAtPercentile</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Long">Long</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@getValueAtPercentile(x$1:Double):Long" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram</dd></dl></div>
+    </li><li name="org.HdrHistogram.AbstractHistogram#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram → AnyRef → Any</dd></dl></div>
+    </li><li name="org.HdrHistogram.AbstractHistogram#highestEquivalentValue" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="highestEquivalentValue(x$1:Long):Long"></a>
+      <a id="highestEquivalentValue(Long):Long"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">highestEquivalentValue</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Long">Long</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@highestEquivalentValue(x$1:Long):Long" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram</dd></dl></div>
+    </li><li name="org.HdrHistogram.ModifiedAtomicHistogram#incrementTotalCount" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="incrementTotalCount():Unit"></a>
+      <a id="incrementTotalCount():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">incrementTotalCount</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@incrementTotalCount():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.HdrHistogram.ModifiedAtomicHistogram">ModifiedAtomicHistogram</a> → AtomicHistogram → Histogram → AbstractHistogram</dd></dl></div>
+    </li><li name="org.HdrHistogram.AbstractHistogram#isAutoResize" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isAutoResize():Boolean"></a>
+      <a id="isAutoResize():Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isAutoResize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@isAutoResize():Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram</dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="org.HdrHistogram.AbstractHistogram#linearBucketValues" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="linearBucketValues(x$1:Long):org.HdrHistogram.AbstractHistogram#LinearBucketValues"></a>
+      <a id="linearBucketValues(Long):LinearBucketValues"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">linearBucketValues</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="org.HdrHistogram.AbstractHistogram.LinearBucketValues">LinearBucketValues</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@linearBucketValues(x$1:Long):org.HdrHistogram.AbstractHistogram#LinearBucketValues" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram</dd></dl></div>
+    </li><li name="org.HdrHistogram.AbstractHistogram#logarithmicBucketValues" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="logarithmicBucketValues(x$1:Long,x$2:Double):org.HdrHistogram.AbstractHistogram#LogarithmicBucketValues"></a>
+      <a id="logarithmicBucketValues(Long,Double):LogarithmicBucketValues"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">logarithmicBucketValues</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="org.HdrHistogram.AbstractHistogram.LogarithmicBucketValues">LogarithmicBucketValues</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@logarithmicBucketValues(x$1:Long,x$2:Double):org.HdrHistogram.AbstractHistogram#LogarithmicBucketValues" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram</dd></dl></div>
+    </li><li name="org.HdrHistogram.AbstractHistogram#lowestEquivalentValue" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="lowestEquivalentValue(x$1:Long):Long"></a>
+      <a id="lowestEquivalentValue(Long):Long"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">lowestEquivalentValue</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Long">Long</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@lowestEquivalentValue(x$1:Long):Long" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram</dd></dl></div>
+    </li><li name="org.HdrHistogram.AbstractHistogram#medianEquivalentValue" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="medianEquivalentValue(x$1:Long):Long"></a>
+      <a id="medianEquivalentValue(Long):Long"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">medianEquivalentValue</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Long">Long</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@medianEquivalentValue(x$1:Long):Long" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram</dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="org.HdrHistogram.AbstractHistogram#nextNonEquivalentValue" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="nextNonEquivalentValue(x$1:Long):Long"></a>
+      <a id="nextNonEquivalentValue(Long):Long"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">nextNonEquivalentValue</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Long">Long</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@nextNonEquivalentValue(x$1:Long):Long" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@notify():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="org.HdrHistogram.AbstractHistogram#outputPercentileDistribution" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="outputPercentileDistribution(x$1:java.io.PrintStream,x$2:Int,x$3:Double,x$4:Boolean):Unit"></a>
+      <a id="outputPercentileDistribution(PrintStream,Int,Double,Boolean):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">outputPercentileDistribution</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="java.io.PrintStream">PrintStream</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>, <span name="arg2">arg2: <span class="extype" name="java.lang.Double">Double</span></span>, <span name="arg3">arg3: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@outputPercentileDistribution(x$1:java.io.PrintStream,x$2:Int,x$3:Double,x$4:Boolean):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram</dd></dl></div>
+    </li><li name="org.HdrHistogram.AbstractHistogram#outputPercentileDistribution" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="outputPercentileDistribution(x$1:java.io.PrintStream,x$2:Int,x$3:Double):Unit"></a>
+      <a id="outputPercentileDistribution(PrintStream,Int,Double):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">outputPercentileDistribution</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="java.io.PrintStream">PrintStream</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>, <span name="arg2">arg2: <span class="extype" name="java.lang.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@outputPercentileDistribution(x$1:java.io.PrintStream,x$2:Int,x$3:Double):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram</dd></dl></div>
+    </li><li name="org.HdrHistogram.AbstractHistogram#outputPercentileDistribution" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="outputPercentileDistribution(x$1:java.io.PrintStream,x$2:Double):Unit"></a>
+      <a id="outputPercentileDistribution(PrintStream,Double):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">outputPercentileDistribution</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="java.io.PrintStream">PrintStream</span></span>, <span name="arg1">arg1: <span class="extype" name="java.lang.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@outputPercentileDistribution(x$1:java.io.PrintStream,x$2:Double):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram</dd></dl></div>
+    </li><li name="org.HdrHistogram.AbstractHistogram#percentiles" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="percentiles(x$1:Int):org.HdrHistogram.AbstractHistogram#Percentiles"></a>
+      <a id="percentiles(Int):Percentiles"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">percentiles</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="org.HdrHistogram.AbstractHistogram.Percentiles">Percentiles</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@percentiles(x$1:Int):org.HdrHistogram.AbstractHistogram#Percentiles" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram</dd></dl></div>
+    </li><li name="org.HdrHistogram.ModifiedAtomicHistogram#protectedSubBucketHalfCount" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="protectedSubBucketHalfCount():Int"></a>
+      <a id="protectedSubBucketHalfCount():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">protectedSubBucketHalfCount</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@protectedSubBucketHalfCount():Int" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.HdrHistogram.ModifiedAtomicHistogram#protectedSubBucketHalfCountMagnitude" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="protectedSubBucketHalfCountMagnitude():Int"></a>
+      <a id="protectedSubBucketHalfCountMagnitude():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">protectedSubBucketHalfCountMagnitude</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@protectedSubBucketHalfCountMagnitude():Int" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.HdrHistogram.ModifiedAtomicHistogram#protectedUnitMagnitude" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="protectedUnitMagnitude():Int"></a>
+      <a id="protectedUnitMagnitude():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">protectedUnitMagnitude</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@protectedUnitMagnitude():Int" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.HdrHistogram.AbstractHistogram#recordValue" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="recordValue(x$1:Long):Unit"></a>
+      <a id="recordValue(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">recordValue</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@recordValue(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.ArrayIndexOutOfBoundsException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="org.HdrHistogram.AbstractHistogram#recordValueWithCount" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="recordValueWithCount(x$1:Long,x$2:Long):Unit"></a>
+      <a id="recordValueWithCount(Long,Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">recordValueWithCount</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@recordValueWithCount(x$1:Long,x$2:Long):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.ArrayIndexOutOfBoundsException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="org.HdrHistogram.AbstractHistogram#recordValueWithExpectedInterval" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="recordValueWithExpectedInterval(x$1:Long,x$2:Long):Unit"></a>
+      <a id="recordValueWithExpectedInterval(Long,Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">recordValueWithExpectedInterval</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@recordValueWithExpectedInterval(x$1:Long,x$2:Long):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.ArrayIndexOutOfBoundsException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="org.HdrHistogram.AbstractHistogram#recordedValues" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="recordedValues():org.HdrHistogram.AbstractHistogram#RecordedValues"></a>
+      <a id="recordedValues():RecordedValues"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">recordedValues</span><span class="params">()</span><span class="result">: <span class="extype" name="org.HdrHistogram.AbstractHistogram.RecordedValues">RecordedValues</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@recordedValues():org.HdrHistogram.AbstractHistogram#RecordedValues" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram</dd></dl></div>
+    </li><li name="org.HdrHistogram.AbstractHistogram#reset" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="reset():Unit"></a>
+      <a id="reset():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">reset</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@reset():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram</dd></dl></div>
+    </li><li name="org.HdrHistogram.AtomicHistogram#setAutoResize" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="setAutoResize(x$1:Boolean):Unit"></a>
+      <a id="setAutoResize(Boolean):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setAutoResize</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@setAutoResize(x$1:Boolean):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AtomicHistogram → AbstractHistogram</dd></dl></div>
+    </li><li name="org.HdrHistogram.AbstractHistogram#setEndTimeStamp" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="setEndTimeStamp(x$1:Long):Unit"></a>
+      <a id="setEndTimeStamp(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setEndTimeStamp</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@setEndTimeStamp(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram → EncodableHistogram</dd></dl></div>
+    </li><li name="org.HdrHistogram.AbstractHistogram#setStartTimeStamp" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="setStartTimeStamp(x$1:Long):Unit"></a>
+      <a id="setStartTimeStamp(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setStartTimeStamp</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@setStartTimeStamp(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram → EncodableHistogram</dd></dl></div>
+    </li><li name="org.HdrHistogram.AbstractHistogram#setTag" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="setTag(x$1:String):Unit"></a>
+      <a id="setTag(String):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setTag</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="java.lang.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@setTag(x$1:String):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram → EncodableHistogram</dd></dl></div>
+    </li><li name="org.HdrHistogram.AbstractHistogram#shiftValuesLeft" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="shiftValuesLeft(x$1:Int):Unit"></a>
+      <a id="shiftValuesLeft(Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">shiftValuesLeft</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@shiftValuesLeft(x$1:Int):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram</dd></dl></div>
+    </li><li name="org.HdrHistogram.AbstractHistogram#shiftValuesRight" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="shiftValuesRight(x$1:Int):Unit"></a>
+      <a id="shiftValuesRight(Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">shiftValuesRight</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@shiftValuesRight(x$1:Int):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram</dd></dl></div>
+    </li><li name="org.HdrHistogram.AbstractHistogram#sizeOfEquivalentValueRange" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="sizeOfEquivalentValueRange(x$1:Long):Long"></a>
+      <a id="sizeOfEquivalentValueRange(Long):Long"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">sizeOfEquivalentValueRange</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Long">Long</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@sizeOfEquivalentValueRange(x$1:Long):Long" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram</dd></dl></div>
+    </li><li name="org.HdrHistogram.AbstractHistogram#subtract" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="subtract(x$1:org.HdrHistogram.AbstractHistogram):Unit"></a>
+      <a id="subtract(AbstractHistogram):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">subtract</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.HdrHistogram.AbstractHistogram">AbstractHistogram</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@subtract(x$1:org.HdrHistogram.AbstractHistogram):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.IllegalArgumentException]">...</span>
+    </span>)</span>
+              
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.ArrayIndexOutOfBoundsException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@toString():String" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="org.HdrHistogram.AbstractHistogram#valuesAreEquivalent" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="valuesAreEquivalent(x$1:Long,x$2:Long):Boolean"></a>
+      <a id="valuesAreEquivalent(Long,Long):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">valuesAreEquivalent</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@valuesAreEquivalent(x$1:Long,x$2:Long):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram</dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@wait():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Deprecated Value Members</h3>
+              <ol><li name="org.HdrHistogram.AbstractHistogram#recordValue" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="recordValue(x$1:Long,x$2:Long):Unit"></a>
+      <a id="recordValue(Long,Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">recordValue</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#org.HdrHistogram.ModifiedAtomicHistogram@recordValue(x$1:Long,x$2:Long):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AbstractHistogram</dd><dt>Annotations</dt><dd>
+                <span class="name">@deprecated</span>
+              
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.ArrayIndexOutOfBoundsException]">...</span>
+    </span>)</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+    </li></ol>
+            </div>
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="org.HdrHistogram.AtomicHistogram">
+              <h3>Inherited from <span class="extype" name="org.HdrHistogram.AtomicHistogram">AtomicHistogram</span></h3>
+            </div><div class="parent" name="org.HdrHistogram.Histogram">
+              <h3>Inherited from <span class="extype" name="org.HdrHistogram.Histogram">Histogram</span></h3>
+            </div><div class="parent" name="org.HdrHistogram.AbstractHistogram">
+              <h3>Inherited from <span class="extype" name="org.HdrHistogram.AbstractHistogram">AbstractHistogram</span></h3>
+            </div><div class="parent" name="java.io.Serializable">
+              <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="org.HdrHistogram.AbstractHistogramBase">
+              <h3>Inherited from <span class="extype" name="org.HdrHistogram.AbstractHistogramBase">AbstractHistogramBase</span></h3>
+            </div><div class="parent" name="org.HdrHistogram.EncodableHistogram">
+              <h3>Inherited from <span class="extype" name="org.HdrHistogram.EncodableHistogram">EncodableHistogram</span></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

@@ -1,0 +1,44 @@
+[0m[[0mdebug[0m] [0mRunning TaskDef(kamon.trace.TraceLocalSpec, org.scalatest.tools.Framework$$anon$1@7587040b, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(kamon.metric.instrument.MinMaxCounterSpec, org.scalatest.tools.Framework$$anon$1@7587040b, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(kamon.util.GlobPathFilterSpec, org.scalatest.tools.Framework$$anon$1@7587040b, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(kamon.trace.SamplerSpec, org.scalatest.tools.Framework$$anon$1@7587040b, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(kamon.metric.SimpleMetricsSpec, org.scalatest.tools.Framework$$anon$1@7587040b, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(kamon.trace.logging.MdcKeysSupportSpec, org.scalatest.tools.Framework$$anon$1@7587040b, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(kamon.metric.TickMetricSnapshotBufferSpec, org.scalatest.tools.Framework$$anon$1@7587040b, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(kamon.util.NeedToScaleSpec, org.scalatest.tools.Framework$$anon$1@7587040b, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(kamon.util.RegexPathFilterSpec, org.scalatest.tools.Framework$$anon$1@7587040b, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(kamon.metric.instrument.UnitOfMeasurementSpec, org.scalatest.tools.Framework$$anon$1@7587040b, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(kamon.metric.instrument.CounterSpec, org.scalatest.tools.Framework$$anon$1@7587040b, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(kamon.util.executors.ExecutorServiceMetricsSpec, org.scalatest.tools.Framework$$anon$1@7587040b, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(kamon.metric.MetricScaleDecoratorSpec, org.scalatest.tools.Framework$$anon$1@7587040b, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(kamon.metric.TraceMetricsSpec, org.scalatest.tools.Framework$$anon$1@7587040b, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(kamon.metric.instrument.GaugeSpec, org.scalatest.tools.Framework$$anon$1@7587040b, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(kamon.trace.TraceContextManipulationSpec, org.scalatest.tools.Framework$$anon$1@7587040b, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(kamon.metric.instrument.HistogramSpec, org.scalatest.tools.Framework$$anon$1@7587040b, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(kamon.metric.SubscriptionsProtocolSpec, org.scalatest.tools.Framework$$anon$1@7587040b, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(kamon.trace.SimpleTraceSpec, org.scalatest.tools.Framework$$anon$1@7587040b, false, [SuiteSelector])[0m
+[0m[[0minfo[0m] [0m[36mRun completed in 30 seconds, 529 milliseconds.[0m[0m
+[0m[[0minfo[0m] [0m[36mTotal number of tests run: 100[0m[0m
+[0m[[0minfo[0m] [0m[36mSuites: completed 19, aborted 0[0m[0m
+[0m[[0minfo[0m] [0m[36mTests: succeeded 100, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0minfo[0m] [0m[32mAll tests passed.[0m[0m
+[0m[[0mdebug[0m] [0mPassed tests:[0m
+[0m[[0mdebug[0m] [0m	kamon.metric.instrument.UnitOfMeasurementSpec[0m
+[0m[[0mdebug[0m] [0m	kamon.trace.TraceLocalSpec[0m
+[0m[[0mdebug[0m] [0m	kamon.metric.instrument.GaugeSpec[0m
+[0m[[0mdebug[0m] [0m	kamon.metric.TickMetricSnapshotBufferSpec[0m
+[0m[[0mdebug[0m] [0m	kamon.util.NeedToScaleSpec[0m
+[0m[[0mdebug[0m] [0m	kamon.util.GlobPathFilterSpec[0m
+[0m[[0mdebug[0m] [0m	kamon.trace.SimpleTraceSpec[0m
+[0m[[0mdebug[0m] [0m	kamon.metric.MetricScaleDecoratorSpec[0m
+[0m[[0mdebug[0m] [0m	kamon.metric.TraceMetricsSpec[0m
+[0m[[0mdebug[0m] [0m	kamon.util.RegexPathFilterSpec[0m
+[0m[[0mdebug[0m] [0m	kamon.metric.instrument.HistogramSpec[0m
+[0m[[0mdebug[0m] [0m	kamon.metric.instrument.MinMaxCounterSpec[0m
+[0m[[0mdebug[0m] [0m	kamon.metric.SubscriptionsProtocolSpec[0m
+[0m[[0mdebug[0m] [0m	kamon.util.executors.ExecutorServiceMetricsSpec[0m
+[0m[[0mdebug[0m] [0m	kamon.trace.TraceContextManipulationSpec[0m
+[0m[[0mdebug[0m] [0m	kamon.metric.instrument.CounterSpec[0m
+[0m[[0mdebug[0m] [0m	kamon.trace.logging.MdcKeysSupportSpec[0m
+[0m[[0mdebug[0m] [0m	kamon.metric.SimpleMetricsSpec[0m
+[0m[[0mdebug[0m] [0m	kamon.trace.SamplerSpec[0m

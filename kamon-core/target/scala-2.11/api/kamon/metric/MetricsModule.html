@@ -1,0 +1,1556 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>MetricsModule - kamon.metric.MetricsModule</title>
+          <meta name="description" content="MetricsModule - kamon.metric.MetricsModule" />
+          <meta name="keywords" content="MetricsModule kamon.metric.MetricsModule" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../index.html';
+            var hash = 'kamon.metric.MetricsModule';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="type">
+      <div id="definition">
+        <img alt="Trait" src="../../lib/trait_big.png" />
+        <p id="owner"><a href="../package.html" class="extype" name="kamon">kamon</a>.<a href="package.html" class="extype" name="kamon.metric">metric</a></p>
+        <h1>MetricsModule</h1><h3><span class="morelinks"><div>Related Doc:
+            <a href="package.html" class="extype" name="kamon.metric">package metric</a>
+          </div></span></h3><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <span class="name">MetricsModule</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By Inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="kamon.metric.MetricsModule"><span>MetricsModule</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show All</span></li>
+            </ol>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        
+
+        <div id="values" class="values members">
+              <h3>Abstract Value Members</h3>
+              <ol><li name="kamon.metric.MetricsModule#buildDefaultCollectionContext" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="buildDefaultCollectionContext:kamon.metric.instrument.CollectionContext"></a>
+      <a id="buildDefaultCollectionContext:CollectionContext"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">buildDefaultCollectionContext</span><span class="result">: <a href="instrument/CollectionContext.html" class="extype" name="kamon.metric.instrument.CollectionContext">CollectionContext</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@buildDefaultCollectionContext:kamon.metric.instrument.CollectionContext" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#entity" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="entity[T&lt;:kamon.metric.EntityRecorder](recorderFactory:kamon.metric.EntityRecorderFactory[T],entity:kamon.metric.Entity):T"></a>
+      <a id="entity[T&lt;:EntityRecorder](EntityRecorderFactory[T],Entity):T"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">entity</span><span class="tparams">[<span name="T">T &lt;: <a href="EntityRecorder.html" class="extype" name="kamon.metric.EntityRecorder">EntityRecorder</a></span>]</span><span class="params">(<span name="recorderFactory">recorderFactory: <a href="EntityRecorderFactory.html" class="extype" name="kamon.metric.EntityRecorderFactory">EntityRecorderFactory</a>[<span class="extype" name="kamon.metric.MetricsModule.entity.T">T</span>]</span>, <span name="entity">entity: <a href="Entity.html" class="extype" name="kamon.metric.Entity">Entity</a></span>)</span><span class="result">: <span class="extype" name="kamon.metric.MetricsModule.entity.T">T</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@entity[T&lt;:kamon.metric.EntityRecorder](recorderFactory:kamon.metric.EntityRecorderFactory[T],entity:kamon.metric.Entity):T" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#find" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="find(entity:kamon.metric.Entity):Option[kamon.metric.EntityRecorder]"></a>
+      <a id="find(Entity):Option[EntityRecorder]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">find</span><span class="params">(<span name="entity">entity: <a href="Entity.html" class="extype" name="kamon.metric.Entity">Entity</a></span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="EntityRecorder.html" class="extype" name="kamon.metric.EntityRecorder">EntityRecorder</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@find(entity:kamon.metric.Entity):Option[kamon.metric.EntityRecorder]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#instrumentFactory" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="instrumentFactory(category:String):kamon.metric.instrument.InstrumentFactory"></a>
+      <a id="instrumentFactory(String):InstrumentFactory"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">instrumentFactory</span><span class="params">(<span name="category">category: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="instrument/InstrumentFactory.html" class="extype" name="kamon.metric.instrument.InstrumentFactory">InstrumentFactory</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@instrumentFactory(category:String):kamon.metric.instrument.InstrumentFactory" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#registerCounter" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="registerCounter(name:String,tags:Map[String,String],unitOfMeasurement:Option[kamon.metric.instrument.UnitOfMeasurement],dynamicRange:Option[kamon.metric.instrument.Histogram.DynamicRange]):kamon.metric.instrument.Counter"></a>
+      <a id="registerCounter(String,Map[String,String],Option[UnitOfMeasurement],Option[DynamicRange]):Counter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">registerCounter</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="tags">tags: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">Map.empty</span></span>, <span name="unitOfMeasurement">unitOfMeasurement: <span class="extype" name="scala.Option">Option</span>[<a href="instrument/UnitOfMeasurement.html" class="extype" name="kamon.metric.instrument.UnitOfMeasurement">UnitOfMeasurement</a>] = <span class="symbol">None</span></span>, <span name="dynamicRange">dynamicRange: <span class="extype" name="scala.Option">Option</span>[<a href="instrument/Histogram$$DynamicRange.html" class="extype" name="kamon.metric.instrument.Histogram.DynamicRange">DynamicRange</a>] = <span class="symbol">None</span></span>)</span><span class="result">: <a href="instrument/Counter.html" class="extype" name="kamon.metric.instrument.Counter">Counter</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@registerCounter(name:String,tags:Map[String,String],unitOfMeasurement:Option[kamon.metric.instrument.UnitOfMeasurement],dynamicRange:Option[kamon.metric.instrument.Histogram.DynamicRange]):kamon.metric.instrument.Counter" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#registerGauge" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="registerGauge(name:String,valueCollector:kamon.metric.instrument.Gauge.CurrentValueCollector,tags:Map[String,String],unitOfMeasurement:Option[kamon.metric.instrument.UnitOfMeasurement],dynamicRange:Option[kamon.metric.instrument.Histogram.DynamicRange],refreshInterval:Option[scala.concurrent.duration.FiniteDuration]):kamon.metric.instrument.Gauge"></a>
+      <a id="registerGauge(String,CurrentValueCollector,Map[String,String],Option[UnitOfMeasurement],Option[DynamicRange],Option[FiniteDuration]):Gauge"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">registerGauge</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="valueCollector">valueCollector: <a href="instrument/Gauge$$CurrentValueCollector.html" class="extype" name="kamon.metric.instrument.Gauge.CurrentValueCollector">CurrentValueCollector</a></span>, <span name="tags">tags: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">Map.empty</span></span>, <span name="unitOfMeasurement">unitOfMeasurement: <span class="extype" name="scala.Option">Option</span>[<a href="instrument/UnitOfMeasurement.html" class="extype" name="kamon.metric.instrument.UnitOfMeasurement">UnitOfMeasurement</a>] = <span class="symbol">None</span></span>, <span name="dynamicRange">dynamicRange: <span class="extype" name="scala.Option">Option</span>[<a href="instrument/Histogram$$DynamicRange.html" class="extype" name="kamon.metric.instrument.Histogram.DynamicRange">DynamicRange</a>] = <span class="symbol">None</span></span>, <span name="refreshInterval">refreshInterval: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.concurrent.duration.FiniteDuration">FiniteDuration</span>] = <span class="symbol">None</span></span>)</span><span class="result">: <a href="instrument/Gauge.html" class="extype" name="kamon.metric.instrument.Gauge">Gauge</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@registerGauge(name:String,valueCollector:kamon.metric.instrument.Gauge.CurrentValueCollector,tags:Map[String,String],unitOfMeasurement:Option[kamon.metric.instrument.UnitOfMeasurement],dynamicRange:Option[kamon.metric.instrument.Histogram.DynamicRange],refreshInterval:Option[scala.concurrent.duration.FiniteDuration]):kamon.metric.instrument.Gauge" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#registerHistogram" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="registerHistogram(name:String,tags:Map[String,String],unitOfMeasurement:Option[kamon.metric.instrument.UnitOfMeasurement],dynamicRange:Option[kamon.metric.instrument.Histogram.DynamicRange]):kamon.metric.instrument.Histogram"></a>
+      <a id="registerHistogram(String,Map[String,String],Option[UnitOfMeasurement],Option[DynamicRange]):Histogram"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">registerHistogram</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="tags">tags: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">Map.empty</span></span>, <span name="unitOfMeasurement">unitOfMeasurement: <span class="extype" name="scala.Option">Option</span>[<a href="instrument/UnitOfMeasurement.html" class="extype" name="kamon.metric.instrument.UnitOfMeasurement">UnitOfMeasurement</a>] = <span class="symbol">None</span></span>, <span name="dynamicRange">dynamicRange: <span class="extype" name="scala.Option">Option</span>[<a href="instrument/Histogram$$DynamicRange.html" class="extype" name="kamon.metric.instrument.Histogram.DynamicRange">DynamicRange</a>] = <span class="symbol">None</span></span>)</span><span class="result">: <a href="instrument/Histogram.html" class="extype" name="kamon.metric.instrument.Histogram">Histogram</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@registerHistogram(name:String,tags:Map[String,String],unitOfMeasurement:Option[kamon.metric.instrument.UnitOfMeasurement],dynamicRange:Option[kamon.metric.instrument.Histogram.DynamicRange]):kamon.metric.instrument.Histogram" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#registerMinMaxCounter" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="registerMinMaxCounter(name:String,tags:Map[String,String],unitOfMeasurement:Option[kamon.metric.instrument.UnitOfMeasurement],dynamicRange:Option[kamon.metric.instrument.Histogram.DynamicRange],refreshInterval:Option[scala.concurrent.duration.FiniteDuration]):kamon.metric.instrument.MinMaxCounter"></a>
+      <a id="registerMinMaxCounter(String,Map[String,String],Option[UnitOfMeasurement],Option[DynamicRange],Option[FiniteDuration]):MinMaxCounter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">registerMinMaxCounter</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="tags">tags: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">Map.empty</span></span>, <span name="unitOfMeasurement">unitOfMeasurement: <span class="extype" name="scala.Option">Option</span>[<a href="instrument/UnitOfMeasurement.html" class="extype" name="kamon.metric.instrument.UnitOfMeasurement">UnitOfMeasurement</a>] = <span class="symbol">None</span></span>, <span name="dynamicRange">dynamicRange: <span class="extype" name="scala.Option">Option</span>[<a href="instrument/Histogram$$DynamicRange.html" class="extype" name="kamon.metric.instrument.Histogram.DynamicRange">DynamicRange</a>] = <span class="symbol">None</span></span>, <span name="refreshInterval">refreshInterval: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.concurrent.duration.FiniteDuration">FiniteDuration</span>] = <span class="symbol">None</span></span>)</span><span class="result">: <a href="instrument/MinMaxCounter.html" class="extype" name="kamon.metric.instrument.MinMaxCounter">MinMaxCounter</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@registerMinMaxCounter(name:String,tags:Map[String,String],unitOfMeasurement:Option[kamon.metric.instrument.UnitOfMeasurement],dynamicRange:Option[kamon.metric.instrument.Histogram.DynamicRange],refreshInterval:Option[scala.concurrent.duration.FiniteDuration]):kamon.metric.instrument.MinMaxCounter" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#removeCounter" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="removeCounter(name:String,tags:Map[String,String]):Boolean"></a>
+      <a id="removeCounter(String,Map[String,String]):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">removeCounter</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="tags">tags: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@removeCounter(name:String,tags:Map[String,String]):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#removeEntity" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="removeEntity(entity:kamon.metric.Entity):Boolean"></a>
+      <a id="removeEntity(Entity):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">removeEntity</span><span class="params">(<span name="entity">entity: <a href="Entity.html" class="extype" name="kamon.metric.Entity">Entity</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@removeEntity(entity:kamon.metric.Entity):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#removeGauge" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="removeGauge(name:String,tags:Map[String,String]):Boolean"></a>
+      <a id="removeGauge(String,Map[String,String]):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">removeGauge</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="tags">tags: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@removeGauge(name:String,tags:Map[String,String]):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#removeHistogram" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="removeHistogram(name:String,tags:Map[String,String]):Boolean"></a>
+      <a id="removeHistogram(String,Map[String,String]):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">removeHistogram</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="tags">tags: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@removeHistogram(name:String,tags:Map[String,String]):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#removeMinMaxCounter" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="removeMinMaxCounter(name:String,tags:Map[String,String]):Boolean"></a>
+      <a id="removeMinMaxCounter(String,Map[String,String]):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">removeMinMaxCounter</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="tags">tags: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@removeMinMaxCounter(name:String,tags:Map[String,String]):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#settings" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="settings:kamon.metric.MetricsSettings"></a>
+      <a id="settings:MetricsSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">settings</span><span class="result">: <a href="MetricsSettings.html" class="extype" name="kamon.metric.MetricsSettings">MetricsSettings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@settings:kamon.metric.MetricsSettings" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#shouldTrack" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="shouldTrack(entity:kamon.metric.Entity):Boolean"></a>
+      <a id="shouldTrack(Entity):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">shouldTrack</span><span class="params">(<span name="entity">entity: <a href="Entity.html" class="extype" name="kamon.metric.Entity">Entity</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@shouldTrack(entity:kamon.metric.Entity):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#subscribe" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="subscribe(filter:kamon.metric.SubscriptionFilter,subscriber:akka.actor.ActorRef,permanently:Boolean):Unit"></a>
+      <a id="subscribe(SubscriptionFilter,ActorRef,Boolean):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">subscribe</span><span class="params">(<span name="filter">filter: <a href="SubscriptionFilter.html" class="extype" name="kamon.metric.SubscriptionFilter">SubscriptionFilter</a></span>, <span name="subscriber">subscriber: <span class="extype" name="akka.actor.ActorRef">ActorRef</span></span>, <span name="permanently">permanently: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@subscribe(filter:kamon.metric.SubscriptionFilter,subscriber:akka.actor.ActorRef,permanently:Boolean):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#unsubscribe" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="unsubscribe(subscriber:akka.actor.ActorRef):Unit"></a>
+      <a id="unsubscribe(ActorRef):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">unsubscribe</span><span class="params">(<span name="subscriber">subscriber: <span class="extype" name="akka.actor.ActorRef">ActorRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@unsubscribe(subscriber:akka.actor.ActorRef):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        <div id="values" class="values members">
+              <h3>Concrete Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@##():Int" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@clone():Object" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="kamon.metric.MetricsModule#counter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="counter(name:String,tags:Map[String,String],unitOfMeasurement:kamon.metric.instrument.UnitOfMeasurement):kamon.metric.instrument.Counter"></a>
+      <a id="counter(String,Map[String,String],UnitOfMeasurement):Counter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">counter</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="tags">tags: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="unitOfMeasurement">unitOfMeasurement: <a href="instrument/UnitOfMeasurement.html" class="extype" name="kamon.metric.instrument.UnitOfMeasurement">UnitOfMeasurement</a></span>)</span><span class="result">: <a href="instrument/Counter.html" class="extype" name="kamon.metric.instrument.Counter">Counter</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@counter(name:String,tags:Map[String,String],unitOfMeasurement:kamon.metric.instrument.UnitOfMeasurement):kamon.metric.instrument.Counter" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#counter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="counter(name:String,tags:Map[String,String]):kamon.metric.instrument.Counter"></a>
+      <a id="counter(String,Map[String,String]):Counter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">counter</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="tags">tags: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <a href="instrument/Counter.html" class="extype" name="kamon.metric.instrument.Counter">Counter</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@counter(name:String,tags:Map[String,String]):kamon.metric.instrument.Counter" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#counter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="counter(name:String,unitOfMeasurement:kamon.metric.instrument.UnitOfMeasurement):kamon.metric.instrument.Counter"></a>
+      <a id="counter(String,UnitOfMeasurement):Counter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">counter</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="unitOfMeasurement">unitOfMeasurement: <a href="instrument/UnitOfMeasurement.html" class="extype" name="kamon.metric.instrument.UnitOfMeasurement">UnitOfMeasurement</a></span>)</span><span class="result">: <a href="instrument/Counter.html" class="extype" name="kamon.metric.instrument.Counter">Counter</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@counter(name:String,unitOfMeasurement:kamon.metric.instrument.UnitOfMeasurement):kamon.metric.instrument.Counter" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#counter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="counter(name:String):kamon.metric.instrument.Counter"></a>
+      <a id="counter(String):Counter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">counter</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="instrument/Counter.html" class="extype" name="kamon.metric.instrument.Counter">Counter</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@counter(name:String):kamon.metric.instrument.Counter" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#entity" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="entity[T&lt;:kamon.metric.EntityRecorder](recorderFactory:kamon.metric.EntityRecorderFactory[T],name:String,tags:Map[String,String]):T"></a>
+      <a id="entity[T&lt;:EntityRecorder](EntityRecorderFactory[T],String,Map[String,String]):T"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">entity</span><span class="tparams">[<span name="T">T &lt;: <a href="EntityRecorder.html" class="extype" name="kamon.metric.EntityRecorder">EntityRecorder</a></span>]</span><span class="params">(<span name="recorderFactory">recorderFactory: <a href="EntityRecorderFactory.html" class="extype" name="kamon.metric.EntityRecorderFactory">EntityRecorderFactory</a>[<span class="extype" name="kamon.metric.MetricsModule.entity.T">T</span>]</span>, <span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="tags">tags: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <span class="extype" name="kamon.metric.MetricsModule.entity.T">T</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@entity[T&lt;:kamon.metric.EntityRecorder](recorderFactory:kamon.metric.EntityRecorderFactory[T],name:String,tags:Map[String,String]):T" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#entity" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="entity[T&lt;:kamon.metric.EntityRecorder](recorderFactory:kamon.metric.EntityRecorderFactory[T],name:String):T"></a>
+      <a id="entity[T&lt;:EntityRecorder](EntityRecorderFactory[T],String):T"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">entity</span><span class="tparams">[<span name="T">T &lt;: <a href="EntityRecorder.html" class="extype" name="kamon.metric.EntityRecorder">EntityRecorder</a></span>]</span><span class="params">(<span name="recorderFactory">recorderFactory: <a href="EntityRecorderFactory.html" class="extype" name="kamon.metric.EntityRecorderFactory">EntityRecorderFactory</a>[<span class="extype" name="kamon.metric.MetricsModule.entity.T">T</span>]</span>, <span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="kamon.metric.MetricsModule.entity.T">T</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@entity[T&lt;:kamon.metric.EntityRecorder](recorderFactory:kamon.metric.EntityRecorderFactory[T],name:String):T" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a>
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="kamon.metric.MetricsModule#find" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="find(name:String,category:String,tags:Map[String,String]):Option[kamon.metric.EntityRecorder]"></a>
+      <a id="find(String,String,Map[String,String]):Option[EntityRecorder]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">find</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="category">category: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="tags">tags: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="EntityRecorder.html" class="extype" name="kamon.metric.EntityRecorder">EntityRecorder</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@find(name:String,category:String,tags:Map[String,String]):Option[kamon.metric.EntityRecorder]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#find" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="find(name:String,category:String):Option[kamon.metric.EntityRecorder]"></a>
+      <a id="find(String,String):Option[EntityRecorder]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">find</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="category">category: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="EntityRecorder.html" class="extype" name="kamon.metric.EntityRecorder">EntityRecorder</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@find(name:String,category:String):Option[kamon.metric.EntityRecorder]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#gauge" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="gauge(name:String,tags:Map[String,String],unitOfMeasurement:kamon.metric.instrument.UnitOfMeasurement,dynamicRange:kamon.metric.instrument.Histogram.DynamicRange)(valueCollector:kamon.metric.instrument.Gauge.CurrentValueCollector):kamon.metric.instrument.Gauge"></a>
+      <a id="gauge(String,Map[String,String],UnitOfMeasurement,DynamicRange)(CurrentValueCollector):Gauge"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">gauge</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="tags">tags: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="unitOfMeasurement">unitOfMeasurement: <a href="instrument/UnitOfMeasurement.html" class="extype" name="kamon.metric.instrument.UnitOfMeasurement">UnitOfMeasurement</a></span>, <span name="dynamicRange">dynamicRange: <a href="instrument/Histogram$$DynamicRange.html" class="extype" name="kamon.metric.instrument.Histogram.DynamicRange">DynamicRange</a></span>)</span><span class="params">(<span name="valueCollector">valueCollector: <a href="instrument/Gauge$$CurrentValueCollector.html" class="extype" name="kamon.metric.instrument.Gauge.CurrentValueCollector">CurrentValueCollector</a></span>)</span><span class="result">: <a href="instrument/Gauge.html" class="extype" name="kamon.metric.instrument.Gauge">Gauge</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@gauge(name:String,tags:Map[String,String],unitOfMeasurement:kamon.metric.instrument.UnitOfMeasurement,dynamicRange:kamon.metric.instrument.Histogram.DynamicRange)(valueCollector:kamon.metric.instrument.Gauge.CurrentValueCollector):kamon.metric.instrument.Gauge" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#gauge" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="gauge(name:String,tags:Map[String,String],dynamicRange:kamon.metric.instrument.Histogram.DynamicRange)(valueCollector:kamon.metric.instrument.Gauge.CurrentValueCollector):kamon.metric.instrument.Gauge"></a>
+      <a id="gauge(String,Map[String,String],DynamicRange)(CurrentValueCollector):Gauge"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">gauge</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="tags">tags: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="dynamicRange">dynamicRange: <a href="instrument/Histogram$$DynamicRange.html" class="extype" name="kamon.metric.instrument.Histogram.DynamicRange">DynamicRange</a></span>)</span><span class="params">(<span name="valueCollector">valueCollector: <a href="instrument/Gauge$$CurrentValueCollector.html" class="extype" name="kamon.metric.instrument.Gauge.CurrentValueCollector">CurrentValueCollector</a></span>)</span><span class="result">: <a href="instrument/Gauge.html" class="extype" name="kamon.metric.instrument.Gauge">Gauge</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@gauge(name:String,tags:Map[String,String],dynamicRange:kamon.metric.instrument.Histogram.DynamicRange)(valueCollector:kamon.metric.instrument.Gauge.CurrentValueCollector):kamon.metric.instrument.Gauge" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#gauge" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="gauge(name:String,tags:Map[String,String],unitOfMeasurement:kamon.metric.instrument.UnitOfMeasurement)(valueCollector:kamon.metric.instrument.Gauge.CurrentValueCollector):kamon.metric.instrument.Gauge"></a>
+      <a id="gauge(String,Map[String,String],UnitOfMeasurement)(CurrentValueCollector):Gauge"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">gauge</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="tags">tags: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="unitOfMeasurement">unitOfMeasurement: <a href="instrument/UnitOfMeasurement.html" class="extype" name="kamon.metric.instrument.UnitOfMeasurement">UnitOfMeasurement</a></span>)</span><span class="params">(<span name="valueCollector">valueCollector: <a href="instrument/Gauge$$CurrentValueCollector.html" class="extype" name="kamon.metric.instrument.Gauge.CurrentValueCollector">CurrentValueCollector</a></span>)</span><span class="result">: <a href="instrument/Gauge.html" class="extype" name="kamon.metric.instrument.Gauge">Gauge</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@gauge(name:String,tags:Map[String,String],unitOfMeasurement:kamon.metric.instrument.UnitOfMeasurement)(valueCollector:kamon.metric.instrument.Gauge.CurrentValueCollector):kamon.metric.instrument.Gauge" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#gauge" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="gauge(name:String,tags:Map[String,String])(valueCollector:kamon.metric.instrument.Gauge.CurrentValueCollector):kamon.metric.instrument.Gauge"></a>
+      <a id="gauge(String,Map[String,String])(CurrentValueCollector):Gauge"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">gauge</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="tags">tags: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="params">(<span name="valueCollector">valueCollector: <a href="instrument/Gauge$$CurrentValueCollector.html" class="extype" name="kamon.metric.instrument.Gauge.CurrentValueCollector">CurrentValueCollector</a></span>)</span><span class="result">: <a href="instrument/Gauge.html" class="extype" name="kamon.metric.instrument.Gauge">Gauge</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@gauge(name:String,tags:Map[String,String])(valueCollector:kamon.metric.instrument.Gauge.CurrentValueCollector):kamon.metric.instrument.Gauge" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#gauge" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="gauge(name:String,unitOfMeasurement:kamon.metric.instrument.UnitOfMeasurement,dynamicRange:kamon.metric.instrument.Histogram.DynamicRange)(valueCollector:kamon.metric.instrument.Gauge.CurrentValueCollector):kamon.metric.instrument.Gauge"></a>
+      <a id="gauge(String,UnitOfMeasurement,DynamicRange)(CurrentValueCollector):Gauge"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">gauge</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="unitOfMeasurement">unitOfMeasurement: <a href="instrument/UnitOfMeasurement.html" class="extype" name="kamon.metric.instrument.UnitOfMeasurement">UnitOfMeasurement</a></span>, <span name="dynamicRange">dynamicRange: <a href="instrument/Histogram$$DynamicRange.html" class="extype" name="kamon.metric.instrument.Histogram.DynamicRange">DynamicRange</a></span>)</span><span class="params">(<span name="valueCollector">valueCollector: <a href="instrument/Gauge$$CurrentValueCollector.html" class="extype" name="kamon.metric.instrument.Gauge.CurrentValueCollector">CurrentValueCollector</a></span>)</span><span class="result">: <a href="instrument/Gauge.html" class="extype" name="kamon.metric.instrument.Gauge">Gauge</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@gauge(name:String,unitOfMeasurement:kamon.metric.instrument.UnitOfMeasurement,dynamicRange:kamon.metric.instrument.Histogram.DynamicRange)(valueCollector:kamon.metric.instrument.Gauge.CurrentValueCollector):kamon.metric.instrument.Gauge" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#gauge" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="gauge(name:String,dynamicRange:kamon.metric.instrument.Histogram.DynamicRange,refreshInterval:scala.concurrent.duration.FiniteDuration)(valueCollector:kamon.metric.instrument.Gauge.CurrentValueCollector):kamon.metric.instrument.Gauge"></a>
+      <a id="gauge(String,DynamicRange,FiniteDuration)(CurrentValueCollector):Gauge"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">gauge</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="dynamicRange">dynamicRange: <a href="instrument/Histogram$$DynamicRange.html" class="extype" name="kamon.metric.instrument.Histogram.DynamicRange">DynamicRange</a></span>, <span name="refreshInterval">refreshInterval: <span class="extype" name="scala.concurrent.duration.FiniteDuration">FiniteDuration</span></span>)</span><span class="params">(<span name="valueCollector">valueCollector: <a href="instrument/Gauge$$CurrentValueCollector.html" class="extype" name="kamon.metric.instrument.Gauge.CurrentValueCollector">CurrentValueCollector</a></span>)</span><span class="result">: <a href="instrument/Gauge.html" class="extype" name="kamon.metric.instrument.Gauge">Gauge</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@gauge(name:String,dynamicRange:kamon.metric.instrument.Histogram.DynamicRange,refreshInterval:scala.concurrent.duration.FiniteDuration)(valueCollector:kamon.metric.instrument.Gauge.CurrentValueCollector):kamon.metric.instrument.Gauge" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#gauge" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="gauge(name:String,refreshInterval:scala.concurrent.duration.FiniteDuration)(valueCollector:kamon.metric.instrument.Gauge.CurrentValueCollector):kamon.metric.instrument.Gauge"></a>
+      <a id="gauge(String,FiniteDuration)(CurrentValueCollector):Gauge"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">gauge</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="refreshInterval">refreshInterval: <span class="extype" name="scala.concurrent.duration.FiniteDuration">FiniteDuration</span></span>)</span><span class="params">(<span name="valueCollector">valueCollector: <a href="instrument/Gauge$$CurrentValueCollector.html" class="extype" name="kamon.metric.instrument.Gauge.CurrentValueCollector">CurrentValueCollector</a></span>)</span><span class="result">: <a href="instrument/Gauge.html" class="extype" name="kamon.metric.instrument.Gauge">Gauge</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@gauge(name:String,refreshInterval:scala.concurrent.duration.FiniteDuration)(valueCollector:kamon.metric.instrument.Gauge.CurrentValueCollector):kamon.metric.instrument.Gauge" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#gauge" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="gauge(name:String,dynamicRange:kamon.metric.instrument.Histogram.DynamicRange)(valueCollector:kamon.metric.instrument.Gauge.CurrentValueCollector):kamon.metric.instrument.Gauge"></a>
+      <a id="gauge(String,DynamicRange)(CurrentValueCollector):Gauge"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">gauge</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="dynamicRange">dynamicRange: <a href="instrument/Histogram$$DynamicRange.html" class="extype" name="kamon.metric.instrument.Histogram.DynamicRange">DynamicRange</a></span>)</span><span class="params">(<span name="valueCollector">valueCollector: <a href="instrument/Gauge$$CurrentValueCollector.html" class="extype" name="kamon.metric.instrument.Gauge.CurrentValueCollector">CurrentValueCollector</a></span>)</span><span class="result">: <a href="instrument/Gauge.html" class="extype" name="kamon.metric.instrument.Gauge">Gauge</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@gauge(name:String,dynamicRange:kamon.metric.instrument.Histogram.DynamicRange)(valueCollector:kamon.metric.instrument.Gauge.CurrentValueCollector):kamon.metric.instrument.Gauge" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#gauge" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="gauge(name:String,unitOfMeasurement:kamon.metric.instrument.UnitOfMeasurement)(valueCollector:kamon.metric.instrument.Gauge.CurrentValueCollector):kamon.metric.instrument.Gauge"></a>
+      <a id="gauge(String,UnitOfMeasurement)(CurrentValueCollector):Gauge"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">gauge</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="unitOfMeasurement">unitOfMeasurement: <a href="instrument/UnitOfMeasurement.html" class="extype" name="kamon.metric.instrument.UnitOfMeasurement">UnitOfMeasurement</a></span>)</span><span class="params">(<span name="valueCollector">valueCollector: <a href="instrument/Gauge$$CurrentValueCollector.html" class="extype" name="kamon.metric.instrument.Gauge.CurrentValueCollector">CurrentValueCollector</a></span>)</span><span class="result">: <a href="instrument/Gauge.html" class="extype" name="kamon.metric.instrument.Gauge">Gauge</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@gauge(name:String,unitOfMeasurement:kamon.metric.instrument.UnitOfMeasurement)(valueCollector:kamon.metric.instrument.Gauge.CurrentValueCollector):kamon.metric.instrument.Gauge" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#gauge" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="gauge(name:String)(valueCollector:kamon.metric.instrument.Gauge.CurrentValueCollector):kamon.metric.instrument.Gauge"></a>
+      <a id="gauge(String)(CurrentValueCollector):Gauge"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">gauge</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span name="valueCollector">valueCollector: <a href="instrument/Gauge$$CurrentValueCollector.html" class="extype" name="kamon.metric.instrument.Gauge.CurrentValueCollector">CurrentValueCollector</a></span>)</span><span class="result">: <a href="instrument/Gauge.html" class="extype" name="kamon.metric.instrument.Gauge">Gauge</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@gauge(name:String)(valueCollector:kamon.metric.instrument.Gauge.CurrentValueCollector):kamon.metric.instrument.Gauge" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="kamon.metric.MetricsModule#histogram" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="histogram(name:String,tags:Map[String,String],unitOfMeasurement:kamon.metric.instrument.UnitOfMeasurement,dynamicRange:kamon.metric.instrument.Histogram.DynamicRange):kamon.metric.instrument.Histogram"></a>
+      <a id="histogram(String,Map[String,String],UnitOfMeasurement,DynamicRange):Histogram"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">histogram</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="tags">tags: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="unitOfMeasurement">unitOfMeasurement: <a href="instrument/UnitOfMeasurement.html" class="extype" name="kamon.metric.instrument.UnitOfMeasurement">UnitOfMeasurement</a></span>, <span name="dynamicRange">dynamicRange: <a href="instrument/Histogram$$DynamicRange.html" class="extype" name="kamon.metric.instrument.Histogram.DynamicRange">DynamicRange</a></span>)</span><span class="result">: <a href="instrument/Histogram.html" class="extype" name="kamon.metric.instrument.Histogram">Histogram</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@histogram(name:String,tags:Map[String,String],unitOfMeasurement:kamon.metric.instrument.UnitOfMeasurement,dynamicRange:kamon.metric.instrument.Histogram.DynamicRange):kamon.metric.instrument.Histogram" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#histogram" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="histogram(name:String,tags:Map[String,String],dynamicRange:kamon.metric.instrument.Histogram.DynamicRange):kamon.metric.instrument.Histogram"></a>
+      <a id="histogram(String,Map[String,String],DynamicRange):Histogram"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">histogram</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="tags">tags: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="dynamicRange">dynamicRange: <a href="instrument/Histogram$$DynamicRange.html" class="extype" name="kamon.metric.instrument.Histogram.DynamicRange">DynamicRange</a></span>)</span><span class="result">: <a href="instrument/Histogram.html" class="extype" name="kamon.metric.instrument.Histogram">Histogram</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@histogram(name:String,tags:Map[String,String],dynamicRange:kamon.metric.instrument.Histogram.DynamicRange):kamon.metric.instrument.Histogram" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#histogram" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="histogram(name:String,tags:Map[String,String],unitOfMeasurement:kamon.metric.instrument.UnitOfMeasurement):kamon.metric.instrument.Histogram"></a>
+      <a id="histogram(String,Map[String,String],UnitOfMeasurement):Histogram"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">histogram</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="tags">tags: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="unitOfMeasurement">unitOfMeasurement: <a href="instrument/UnitOfMeasurement.html" class="extype" name="kamon.metric.instrument.UnitOfMeasurement">UnitOfMeasurement</a></span>)</span><span class="result">: <a href="instrument/Histogram.html" class="extype" name="kamon.metric.instrument.Histogram">Histogram</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@histogram(name:String,tags:Map[String,String],unitOfMeasurement:kamon.metric.instrument.UnitOfMeasurement):kamon.metric.instrument.Histogram" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#histogram" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="histogram(name:String,tags:Map[String,String]):kamon.metric.instrument.Histogram"></a>
+      <a id="histogram(String,Map[String,String]):Histogram"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">histogram</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="tags">tags: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <a href="instrument/Histogram.html" class="extype" name="kamon.metric.instrument.Histogram">Histogram</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@histogram(name:String,tags:Map[String,String]):kamon.metric.instrument.Histogram" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#histogram" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="histogram(name:String,unitOfMeasurement:kamon.metric.instrument.UnitOfMeasurement,dynamicRange:kamon.metric.instrument.Histogram.DynamicRange):kamon.metric.instrument.Histogram"></a>
+      <a id="histogram(String,UnitOfMeasurement,DynamicRange):Histogram"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">histogram</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="unitOfMeasurement">unitOfMeasurement: <a href="instrument/UnitOfMeasurement.html" class="extype" name="kamon.metric.instrument.UnitOfMeasurement">UnitOfMeasurement</a></span>, <span name="dynamicRange">dynamicRange: <a href="instrument/Histogram$$DynamicRange.html" class="extype" name="kamon.metric.instrument.Histogram.DynamicRange">DynamicRange</a></span>)</span><span class="result">: <a href="instrument/Histogram.html" class="extype" name="kamon.metric.instrument.Histogram">Histogram</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@histogram(name:String,unitOfMeasurement:kamon.metric.instrument.UnitOfMeasurement,dynamicRange:kamon.metric.instrument.Histogram.DynamicRange):kamon.metric.instrument.Histogram" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#histogram" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="histogram(name:String,dynamicRange:kamon.metric.instrument.Histogram.DynamicRange):kamon.metric.instrument.Histogram"></a>
+      <a id="histogram(String,DynamicRange):Histogram"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">histogram</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="dynamicRange">dynamicRange: <a href="instrument/Histogram$$DynamicRange.html" class="extype" name="kamon.metric.instrument.Histogram.DynamicRange">DynamicRange</a></span>)</span><span class="result">: <a href="instrument/Histogram.html" class="extype" name="kamon.metric.instrument.Histogram">Histogram</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@histogram(name:String,dynamicRange:kamon.metric.instrument.Histogram.DynamicRange):kamon.metric.instrument.Histogram" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#histogram" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="histogram(name:String,unitOfMeasurement:kamon.metric.instrument.UnitOfMeasurement):kamon.metric.instrument.Histogram"></a>
+      <a id="histogram(String,UnitOfMeasurement):Histogram"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">histogram</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="unitOfMeasurement">unitOfMeasurement: <a href="instrument/UnitOfMeasurement.html" class="extype" name="kamon.metric.instrument.UnitOfMeasurement">UnitOfMeasurement</a></span>)</span><span class="result">: <a href="instrument/Histogram.html" class="extype" name="kamon.metric.instrument.Histogram">Histogram</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@histogram(name:String,unitOfMeasurement:kamon.metric.instrument.UnitOfMeasurement):kamon.metric.instrument.Histogram" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#histogram" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="histogram(name:String):kamon.metric.instrument.Histogram"></a>
+      <a id="histogram(String):Histogram"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">histogram</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="instrument/Histogram.html" class="extype" name="kamon.metric.instrument.Histogram">Histogram</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@histogram(name:String):kamon.metric.instrument.Histogram" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="kamon.metric.MetricsModule#minMaxCounter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="minMaxCounter(name:String,tags:Map[String,String],unitOfMeasurement:kamon.metric.instrument.UnitOfMeasurement,dynamicRange:kamon.metric.instrument.Histogram.DynamicRange):kamon.metric.instrument.MinMaxCounter"></a>
+      <a id="minMaxCounter(String,Map[String,String],UnitOfMeasurement,DynamicRange):MinMaxCounter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">minMaxCounter</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="tags">tags: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="unitOfMeasurement">unitOfMeasurement: <a href="instrument/UnitOfMeasurement.html" class="extype" name="kamon.metric.instrument.UnitOfMeasurement">UnitOfMeasurement</a></span>, <span name="dynamicRange">dynamicRange: <a href="instrument/Histogram$$DynamicRange.html" class="extype" name="kamon.metric.instrument.Histogram.DynamicRange">DynamicRange</a></span>)</span><span class="result">: <a href="instrument/MinMaxCounter.html" class="extype" name="kamon.metric.instrument.MinMaxCounter">MinMaxCounter</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@minMaxCounter(name:String,tags:Map[String,String],unitOfMeasurement:kamon.metric.instrument.UnitOfMeasurement,dynamicRange:kamon.metric.instrument.Histogram.DynamicRange):kamon.metric.instrument.MinMaxCounter" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#minMaxCounter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="minMaxCounter(name:String,tags:Map[String,String],dynamicRange:kamon.metric.instrument.Histogram.DynamicRange):kamon.metric.instrument.MinMaxCounter"></a>
+      <a id="minMaxCounter(String,Map[String,String],DynamicRange):MinMaxCounter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">minMaxCounter</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="tags">tags: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="dynamicRange">dynamicRange: <a href="instrument/Histogram$$DynamicRange.html" class="extype" name="kamon.metric.instrument.Histogram.DynamicRange">DynamicRange</a></span>)</span><span class="result">: <a href="instrument/MinMaxCounter.html" class="extype" name="kamon.metric.instrument.MinMaxCounter">MinMaxCounter</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@minMaxCounter(name:String,tags:Map[String,String],dynamicRange:kamon.metric.instrument.Histogram.DynamicRange):kamon.metric.instrument.MinMaxCounter" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#minMaxCounter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="minMaxCounter(name:String,tags:Map[String,String],unitOfMeasurement:kamon.metric.instrument.UnitOfMeasurement):kamon.metric.instrument.MinMaxCounter"></a>
+      <a id="minMaxCounter(String,Map[String,String],UnitOfMeasurement):MinMaxCounter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">minMaxCounter</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="tags">tags: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="unitOfMeasurement">unitOfMeasurement: <a href="instrument/UnitOfMeasurement.html" class="extype" name="kamon.metric.instrument.UnitOfMeasurement">UnitOfMeasurement</a></span>)</span><span class="result">: <a href="instrument/MinMaxCounter.html" class="extype" name="kamon.metric.instrument.MinMaxCounter">MinMaxCounter</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@minMaxCounter(name:String,tags:Map[String,String],unitOfMeasurement:kamon.metric.instrument.UnitOfMeasurement):kamon.metric.instrument.MinMaxCounter" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#minMaxCounter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="minMaxCounter(name:String,tags:Map[String,String]):kamon.metric.instrument.MinMaxCounter"></a>
+      <a id="minMaxCounter(String,Map[String,String]):MinMaxCounter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">minMaxCounter</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="tags">tags: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <a href="instrument/MinMaxCounter.html" class="extype" name="kamon.metric.instrument.MinMaxCounter">MinMaxCounter</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@minMaxCounter(name:String,tags:Map[String,String]):kamon.metric.instrument.MinMaxCounter" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#minMaxCounter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="minMaxCounter(name:String,unitOfMeasurement:kamon.metric.instrument.UnitOfMeasurement,dynamicRange:kamon.metric.instrument.Histogram.DynamicRange):kamon.metric.instrument.MinMaxCounter"></a>
+      <a id="minMaxCounter(String,UnitOfMeasurement,DynamicRange):MinMaxCounter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">minMaxCounter</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="unitOfMeasurement">unitOfMeasurement: <a href="instrument/UnitOfMeasurement.html" class="extype" name="kamon.metric.instrument.UnitOfMeasurement">UnitOfMeasurement</a></span>, <span name="dynamicRange">dynamicRange: <a href="instrument/Histogram$$DynamicRange.html" class="extype" name="kamon.metric.instrument.Histogram.DynamicRange">DynamicRange</a></span>)</span><span class="result">: <a href="instrument/MinMaxCounter.html" class="extype" name="kamon.metric.instrument.MinMaxCounter">MinMaxCounter</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@minMaxCounter(name:String,unitOfMeasurement:kamon.metric.instrument.UnitOfMeasurement,dynamicRange:kamon.metric.instrument.Histogram.DynamicRange):kamon.metric.instrument.MinMaxCounter" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#minMaxCounter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="minMaxCounter(name:String,dynamicRange:kamon.metric.instrument.Histogram.DynamicRange,refreshInterval:scala.concurrent.duration.FiniteDuration):kamon.metric.instrument.MinMaxCounter"></a>
+      <a id="minMaxCounter(String,DynamicRange,FiniteDuration):MinMaxCounter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">minMaxCounter</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="dynamicRange">dynamicRange: <a href="instrument/Histogram$$DynamicRange.html" class="extype" name="kamon.metric.instrument.Histogram.DynamicRange">DynamicRange</a></span>, <span name="refreshInterval">refreshInterval: <span class="extype" name="scala.concurrent.duration.FiniteDuration">FiniteDuration</span></span>)</span><span class="result">: <a href="instrument/MinMaxCounter.html" class="extype" name="kamon.metric.instrument.MinMaxCounter">MinMaxCounter</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@minMaxCounter(name:String,dynamicRange:kamon.metric.instrument.Histogram.DynamicRange,refreshInterval:scala.concurrent.duration.FiniteDuration):kamon.metric.instrument.MinMaxCounter" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#minMaxCounter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="minMaxCounter(name:String,refreshInterval:scala.concurrent.duration.FiniteDuration):kamon.metric.instrument.MinMaxCounter"></a>
+      <a id="minMaxCounter(String,FiniteDuration):MinMaxCounter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">minMaxCounter</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="refreshInterval">refreshInterval: <span class="extype" name="scala.concurrent.duration.FiniteDuration">FiniteDuration</span></span>)</span><span class="result">: <a href="instrument/MinMaxCounter.html" class="extype" name="kamon.metric.instrument.MinMaxCounter">MinMaxCounter</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@minMaxCounter(name:String,refreshInterval:scala.concurrent.duration.FiniteDuration):kamon.metric.instrument.MinMaxCounter" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#minMaxCounter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="minMaxCounter(name:String,dynamicRange:kamon.metric.instrument.Histogram.DynamicRange):kamon.metric.instrument.MinMaxCounter"></a>
+      <a id="minMaxCounter(String,DynamicRange):MinMaxCounter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">minMaxCounter</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="dynamicRange">dynamicRange: <a href="instrument/Histogram$$DynamicRange.html" class="extype" name="kamon.metric.instrument.Histogram.DynamicRange">DynamicRange</a></span>)</span><span class="result">: <a href="instrument/MinMaxCounter.html" class="extype" name="kamon.metric.instrument.MinMaxCounter">MinMaxCounter</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@minMaxCounter(name:String,dynamicRange:kamon.metric.instrument.Histogram.DynamicRange):kamon.metric.instrument.MinMaxCounter" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#minMaxCounter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="minMaxCounter(name:String,unitOfMeasurement:kamon.metric.instrument.UnitOfMeasurement):kamon.metric.instrument.MinMaxCounter"></a>
+      <a id="minMaxCounter(String,UnitOfMeasurement):MinMaxCounter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">minMaxCounter</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="unitOfMeasurement">unitOfMeasurement: <a href="instrument/UnitOfMeasurement.html" class="extype" name="kamon.metric.instrument.UnitOfMeasurement">UnitOfMeasurement</a></span>)</span><span class="result">: <a href="instrument/MinMaxCounter.html" class="extype" name="kamon.metric.instrument.MinMaxCounter">MinMaxCounter</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@minMaxCounter(name:String,unitOfMeasurement:kamon.metric.instrument.UnitOfMeasurement):kamon.metric.instrument.MinMaxCounter" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#minMaxCounter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="minMaxCounter(name:String):kamon.metric.instrument.MinMaxCounter"></a>
+      <a id="minMaxCounter(String):MinMaxCounter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">minMaxCounter</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="instrument/MinMaxCounter.html" class="extype" name="kamon.metric.instrument.MinMaxCounter">MinMaxCounter</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@minMaxCounter(name:String):kamon.metric.instrument.MinMaxCounter" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@notify():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="kamon.metric.MetricsModule#removeCounter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="removeCounter(name:String):Boolean"></a>
+      <a id="removeCounter(String):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">removeCounter</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@removeCounter(name:String):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#removeEntity" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="removeEntity(name:String,category:String,tags:Map[String,String]):Boolean"></a>
+      <a id="removeEntity(String,String,Map[String,String]):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">removeEntity</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="category">category: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="tags">tags: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@removeEntity(name:String,category:String,tags:Map[String,String]):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#removeEntity" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="removeEntity(name:String,category:String):Boolean"></a>
+      <a id="removeEntity(String,String):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">removeEntity</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="category">category: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@removeEntity(name:String,category:String):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#removeGauge" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="removeGauge(name:String):Boolean"></a>
+      <a id="removeGauge(String):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">removeGauge</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@removeGauge(name:String):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#removeHistogram" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="removeHistogram(name:String):Boolean"></a>
+      <a id="removeHistogram(String):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">removeHistogram</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@removeHistogram(name:String):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#removeMinMaxCounter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="removeMinMaxCounter(name:String):Boolean"></a>
+      <a id="removeMinMaxCounter(String):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">removeMinMaxCounter</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@removeMinMaxCounter(name:String):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#shouldTrack" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="shouldTrack(entityName:String,category:String):Boolean"></a>
+      <a id="shouldTrack(String,String):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">shouldTrack</span><span class="params">(<span name="entityName">entityName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="category">category: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@shouldTrack(entityName:String,category:String):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#subscribe" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="subscribe(category:String,selection:String,subscriber:akka.actor.ActorRef):Unit"></a>
+      <a id="subscribe(String,String,ActorRef):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">subscribe</span><span class="params">(<span name="category">category: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="selection">selection: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="subscriber">subscriber: <span class="extype" name="akka.actor.ActorRef">ActorRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@subscribe(category:String,selection:String,subscriber:akka.actor.ActorRef):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#subscribe" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="subscribe(category:String,selection:String,subscriber:akka.actor.ActorRef,permanently:Boolean):Unit"></a>
+      <a id="subscribe(String,String,ActorRef,Boolean):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">subscribe</span><span class="params">(<span name="category">category: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="selection">selection: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="subscriber">subscriber: <span class="extype" name="akka.actor.ActorRef">ActorRef</span></span>, <span name="permanently">permanently: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@subscribe(category:String,selection:String,subscriber:akka.actor.ActorRef,permanently:Boolean):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsModule#subscribe" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="subscribe(filter:kamon.metric.SubscriptionFilter,subscriber:akka.actor.ActorRef):Unit"></a>
+      <a id="subscribe(SubscriptionFilter,ActorRef):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">subscribe</span><span class="params">(<span name="filter">filter: <a href="SubscriptionFilter.html" class="extype" name="kamon.metric.SubscriptionFilter">SubscriptionFilter</a></span>, <span name="subscriber">subscriber: <span class="extype" name="akka.actor.ActorRef">ActorRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@subscribe(filter:kamon.metric.SubscriptionFilter,subscriber:akka.actor.ActorRef):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@toString():String" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@wait():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.MetricsModule@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

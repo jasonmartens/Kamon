@@ -1,0 +1,6 @@
+[0m[[0minfo[0m] [0m[32mCounterSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32ma Counter[0m[0m
+[0m[[0minfo[0m] [0m[32m- should allow increment only operations[0m[0m
+[0m[[0minfo[0m] [0m[32m- should reset to zero when a snapshot is taken[0m[0m
+[0m[[0minfo[0m] [0m[32m- should produce a snapshot that can be merged with others[0m[0m
+[0m[[0minfo[0m] [0m[32m- should produce a snapshot that can be scaled[0m[0m

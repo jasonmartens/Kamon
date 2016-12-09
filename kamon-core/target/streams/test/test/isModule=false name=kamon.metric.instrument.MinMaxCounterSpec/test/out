@@ -1,0 +1,7 @@
+[0m[[0minfo[0m] [0m[32mMinMaxCounterSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mthe MinMaxCounter[0m[0m
+[0m[[0minfo[0m] [0m[32m- should track ascending tendencies[0m[0m
+[0m[[0minfo[0m] [0m[32m- should track descending tendencies[0m[0m
+[0m[[0minfo[0m] [0m[32m- should reset the min and max to the current value after taking a snapshot[0m[0m
+[0m[[0minfo[0m] [0m[32m- should report zero as the min and current values if the current value fell bellow zero[0m[0m
+[0m[[0minfo[0m] [0m[32m- should never record values bellow zero in very busy situations[0m[0m

@@ -1,0 +1,7 @@
+[0m[[0minfo[0m] [0m[32mGlobPathFilterSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mThe GlobPathFilter[0m[0m
+[0m[[0minfo[0m] [0m[32m- should match a single expression[0m[0m
+[0m[[0minfo[0m] [0m[32m- should match all expressions in the same level[0m[0m
+[0m[[0minfo[0m] [0m[32m- should match all expressions in the same levelss[0m[0m
+[0m[[0minfo[0m] [0m[32m- should match all expressions and crosses the path boundaries[0m[0m
+[0m[[0minfo[0m] [0m[32m- should match exactly one character[0m[0m

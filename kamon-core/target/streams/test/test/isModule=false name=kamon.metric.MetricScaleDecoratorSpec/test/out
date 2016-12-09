@@ -1,0 +1,10 @@
+[0m[[0minfo[0m] [0m[32mMetricScaleDecoratorSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mthe MetricScaleDecorator[0m[0m
+[0m[[0minfo[0m] [0m[32m  when receives a snapshot which[0m[0m
+[0m[[0minfo[0m] [0m[32m    is empty[0m[0m
+[0m[[0minfo[0m] [0m[32m    - should do nothing for empty snapshots[0m[0m
+[0m[[0minfo[0m] [0m[32m    is non empty[0m[0m
+[0m[[0minfo[0m] [0m[32m    - should scale time metrics[0m[0m
+[0m[[0minfo[0m] [0m[32m    - should scale memory metrics[0m[0m
+[0m[[0minfo[0m] [0m[32m    - should do nothing with unknown metrics[0m[0m
+[0m[[0minfo[0m] [0m[32m    - should not change from and to[0m[0m

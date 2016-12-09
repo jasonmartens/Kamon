@@ -1,0 +1,14 @@
+jmh:run 
+jmh:run -prof jmh.extras.JFR
+jmh:run -h
+jmh:run -lprof
+jmh:run -perf
+jmh:run - perf
+jmh:run -perfasm
+jmh:run perfasm
+jmh:run -gc
+jmh:run -prof
+jmh:run -prof perf
+jmh:run -prof gc
+jmh:run 
+exit

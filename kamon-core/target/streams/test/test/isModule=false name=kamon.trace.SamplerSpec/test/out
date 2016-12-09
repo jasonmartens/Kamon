@@ -1,0 +1,8 @@
+[0m[[0minfo[0m] [0m[32mSamplerSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mthe Sampler[0m[0m
+[0m[[0minfo[0m] [0m[32m  should work as intended[0m[0m
+[0m[[0minfo[0m] [0m[32m  - when using all mode[0m[0m
+[0m[[0minfo[0m] [0m[32m  - when using random mode[0m[0m
+[0m[[0minfo[0m] [0m[32m  - when using ordered mode[0m[0m
+[0m[[0minfo[0m] [0m[32m  - when using threshold mode[0m[0m
+[0m[[0minfo[0m] [0m[32m  - when using clock mode[0m[0m

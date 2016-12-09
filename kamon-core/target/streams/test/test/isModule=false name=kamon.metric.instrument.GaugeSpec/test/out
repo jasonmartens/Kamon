@@ -1,0 +1,6 @@
+[0m[[0minfo[0m] [0m[32mGaugeSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32ma Gauge[0m[0m
+[0m[[0minfo[0m] [0m[32m- should automatically record the current value using the configured refresh-interval[0m[0m
+[0m[[0minfo[0m] [0m[32m- should stop automatically recording after a call to cleanup[0m[0m
+[0m[[0minfo[0m] [0m[32m- should produce a Histogram snapshot including all the recorded values[0m[0m
+[0m[[0minfo[0m] [0m[32m- should not record the current value when doing a collection[0m[0m

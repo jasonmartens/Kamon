@@ -1,0 +1,655 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>metric - kamon.metric</title>
+          <meta name="description" content="metric - kamon.metric" />
+          <meta name="keywords" content="metric kamon.metric" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../index.html';
+            var hash = 'kamon.metric.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img alt="Package" src="../../lib/package_big.png" />
+        <p id="owner"><a href="../package.html" class="extype" name="kamon">kamon</a></p>
+        <h1>metric</h1><span class="permalink">
+      <a href="../../index.html#kamon.metric.package" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">metric</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="kamon.metric.CounterRecorder" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CounterRecorderextendsSingleInstrumentEntityRecorderwithProductwithSerializable"></a>
+      <a id="CounterRecorder:CounterRecorder"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="CounterRecorder.html"><span class="name">CounterRecorder</span></a><span class="params">(<span name="key">key: <a href="MetricKey.html" class="extype" name="kamon.metric.MetricKey">MetricKey</a></span>, <span name="instrument">instrument: <a href="instrument/Counter.html" class="extype" name="kamon.metric.instrument.Counter">Counter</a></span>)</span><span class="result"> extends <span class="extype" name="kamon.metric.SingleInstrumentEntityRecorder">SingleInstrumentEntityRecorder</span> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.package@CounterRecorderextendsSingleInstrumentEntityRecorderwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"> Entity recorder for a single Counter instrument.</p>
+    </li><li name="kamon.metric.DefaultEntitySnapshot" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DefaultEntitySnapshotextendsEntitySnapshot"></a>
+      <a id="DefaultEntitySnapshot:DefaultEntitySnapshot"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="DefaultEntitySnapshot.html"><span class="name">DefaultEntitySnapshot</span></a><span class="result"> extends <a href="EntitySnapshot.html" class="extype" name="kamon.metric.EntitySnapshot">EntitySnapshot</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.package@DefaultEntitySnapshotextendsEntitySnapshot" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.Entity" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="EntityextendsProductwithSerializable"></a>
+      <a id="Entity:Entity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Entity.html"><span class="name">Entity</span></a><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="category">category: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="tags">tags: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.package@EntityextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"> Identify a <code>thing</code> that is being monitored by Kamon.</p><div class="fullcomment"><div class="comment cmt"><p> Identify a <code>thing</code> that is being monitored by Kamon. A <a href="Entity.html" class="extype" name="kamon.metric.Entity">kamon.metric.Entity</a> is used to identify tracked <code>things</code>
+ in both the metrics recording and reporting sides. Only the name and category fields are used with determining
+ equality between two entities.</p><p> // TODO: Find a better word for <code>thing</code>.
+</p></div></div>
+    </li><li name="kamon.metric.EntityFilter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="EntityFilterextendsProductwithSerializable"></a>
+      <a id="EntityFilter:EntityFilter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="EntityFilter.html"><span class="name">EntityFilter</span></a><span class="params">(<span name="includes">includes: <span class="extype" name="scala.List">List</span>[<a href="../util/PathFilter.html" class="extype" name="kamon.util.PathFilter">PathFilter</a>]</span>, <span name="excludes">excludes: <span class="extype" name="scala.List">List</span>[<a href="../util/PathFilter.html" class="extype" name="kamon.util.PathFilter">PathFilter</a>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.package@EntityFilterextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p>
+    </li><li name="kamon.metric.EntityRecorder" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="EntityRecorderextendsAnyRef"></a>
+      <a id="EntityRecorder:EntityRecorder"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="EntityRecorder.html"><span class="name">EntityRecorder</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.package@EntityRecorderextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.EntityRecorderFactory" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="EntityRecorderFactory[T&lt;:kamon.metric.EntityRecorder]extendsAnyRef"></a>
+      <a id="EntityRecorderFactory[T&lt;:EntityRecorder]:EntityRecorderFactory[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="EntityRecorderFactory.html"><span class="name">EntityRecorderFactory</span></a><span class="tparams">[<span name="T">T &lt;: <a href="EntityRecorder.html" class="extype" name="kamon.metric.EntityRecorder">EntityRecorder</a></span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.package@EntityRecorderFactory[T&lt;:kamon.metric.EntityRecorder]extendsAnyRef" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.EntityRecorderFactoryCompanion" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="EntityRecorderFactoryCompanion[T&lt;:kamon.metric.EntityRecorder]extendsEntityRecorderFactory[T]"></a>
+      <a id="EntityRecorderFactoryCompanion[T&lt;:EntityRecorder]:EntityRecorderFactoryCompanion[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="EntityRecorderFactoryCompanion.html"><span class="name">EntityRecorderFactoryCompanion</span></a><span class="tparams">[<span name="T">T &lt;: <a href="EntityRecorder.html" class="extype" name="kamon.metric.EntityRecorder">EntityRecorder</a></span>]</span><span class="result"> extends <a href="EntityRecorderFactory.html" class="extype" name="kamon.metric.EntityRecorderFactory">EntityRecorderFactory</a>[<span class="extype" name="kamon.metric.EntityRecorderFactoryCompanion.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.package@EntityRecorderFactoryCompanion[T&lt;:kamon.metric.EntityRecorder]extendsEntityRecorderFactory[T]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.EntityRegistration" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="EntityRegistration[T&lt;:kamon.metric.EntityRecorder]extendsProductwithSerializable"></a>
+      <a id="EntityRegistration[T&lt;:EntityRecorder]:EntityRegistration[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="EntityRegistration.html"><span class="name">EntityRegistration</span></a><span class="tparams">[<span name="T">T &lt;: <a href="EntityRecorder.html" class="extype" name="kamon.metric.EntityRecorder">EntityRecorder</a></span>]</span><span class="params">(<span name="entity">entity: <a href="Entity.html" class="extype" name="kamon.metric.Entity">Entity</a></span>, <span name="recorder">recorder: <span class="extype" name="kamon.metric.EntityRegistration.T">T</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.package@EntityRegistration[T&lt;:kamon.metric.EntityRecorder]extendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.EntitySnapshot" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="EntitySnapshotextendsAnyRef"></a>
+      <a id="EntitySnapshot:EntitySnapshot"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="EntitySnapshot.html"><span class="name">EntitySnapshot</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.package@EntitySnapshotextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.GaugeRecorder" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="GaugeRecorderextendsSingleInstrumentEntityRecorderwithProductwithSerializable"></a>
+      <a id="GaugeRecorder:GaugeRecorder"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="GaugeRecorder.html"><span class="name">GaugeRecorder</span></a><span class="params">(<span name="key">key: <a href="MetricKey.html" class="extype" name="kamon.metric.MetricKey">MetricKey</a></span>, <span name="instrument">instrument: <a href="instrument/Gauge.html" class="extype" name="kamon.metric.instrument.Gauge">Gauge</a></span>)</span><span class="result"> extends <span class="extype" name="kamon.metric.SingleInstrumentEntityRecorder">SingleInstrumentEntityRecorder</span> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.package@GaugeRecorderextendsSingleInstrumentEntityRecorderwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"> Entity recorder for a single Gauge instrument.</p>
+    </li><li name="kamon.metric.GenericEntityRecorder" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="GenericEntityRecorderextendsEntityRecorder"></a>
+      <a id="GenericEntityRecorder:GenericEntityRecorder"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="GenericEntityRecorder.html"><span class="name">GenericEntityRecorder</span></a><span class="result"> extends <a href="EntityRecorder.html" class="extype" name="kamon.metric.EntityRecorder">EntityRecorder</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.package@GenericEntityRecorderextendsEntityRecorder" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"> Base class with plenty of utility methods to facilitate the creation of <a href="EntityRecorder.html" class="extype" name="kamon.metric.EntityRecorder">EntityRecorder</a> implementations.</p><div class="fullcomment"><div class="comment cmt"><p> Base class with plenty of utility methods to facilitate the creation of <a href="EntityRecorder.html" class="extype" name="kamon.metric.EntityRecorder">EntityRecorder</a> implementations.
+ It is not required to use this base class for defining a custom <a href="EntityRecorder.html" class="extype" name="kamon.metric.EntityRecorder">EntityRecorder</a>, but it is certainly
+ the most convenient way to do it and the preferred approach throughout the Kamon codebase.
+</p></div></div>
+    </li><li name="kamon.metric.HistogramRecorder" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="HistogramRecorderextendsSingleInstrumentEntityRecorderwithProductwithSerializable"></a>
+      <a id="HistogramRecorder:HistogramRecorder"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="HistogramRecorder.html"><span class="name">HistogramRecorder</span></a><span class="params">(<span name="key">key: <a href="MetricKey.html" class="extype" name="kamon.metric.MetricKey">MetricKey</a></span>, <span name="instrument">instrument: <a href="instrument/Histogram.html" class="extype" name="kamon.metric.instrument.Histogram">Histogram</a></span>)</span><span class="result"> extends <span class="extype" name="kamon.metric.SingleInstrumentEntityRecorder">SingleInstrumentEntityRecorder</span> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.package@HistogramRecorderextendsSingleInstrumentEntityRecorderwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"> Entity recorder for a single Histogram instrument.</p>
+    </li><li name="kamon.metric.MetricKey" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="MetricKeyextendsAnyRef"></a>
+      <a id="MetricKey:MetricKey"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="MetricKey.html"><span class="name">MetricKey</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.package@MetricKeyextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"> MetricKeys are used to identify a given metric in entity recorders and snapshots.</p>
+    </li><li name="kamon.metric.MetricScaleDecorator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MetricScaleDecoratorextendsActor"></a>
+      <a id="MetricScaleDecorator:MetricScaleDecorator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="MetricScaleDecorator.html"><span class="name">MetricScaleDecorator</span></a><span class="result"> extends <span class="extype" name="akka.actor.Actor">Actor</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.package@MetricScaleDecoratorextendsActor" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Can be used as a decorator to scale TickMetricSnapshot messages to given <code>timeUnits</code> and/or <code>memoryUnits</code>
+before forwarding to original receiver</p>
+    </li><li name="kamon.metric.MetricsModule" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="MetricsModuleextendsAnyRef"></a>
+      <a id="MetricsModule:MetricsModule"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="MetricsModule.html"><span class="name">MetricsModule</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.package@MetricsModuleextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsSettings" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MetricsSettingsextendsProductwithSerializable"></a>
+      <a id="MetricsSettings:MetricsSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="MetricsSettings.html"><span class="name">MetricsSettings</span></a><span class="params">(<span name="tickInterval">tickInterval: <span class="extype" name="scala.concurrent.duration.FiniteDuration">FiniteDuration</span></span>, <span name="defaultCollectionContextBufferSize">defaultCollectionContextBufferSize: <span class="extype" name="scala.Int">Int</span></span>, <span name="trackUnmatchedEntities">trackUnmatchedEntities: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="entityFilters">entityFilters: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <a href="EntityFilter.html" class="extype" name="kamon.metric.EntityFilter">EntityFilter</a>]</span>, <span name="instrumentFactories">instrumentFactories: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <a href="instrument/InstrumentFactory.html" class="extype" name="kamon.metric.instrument.InstrumentFactory">InstrumentFactory</a>]</span>, <span name="defaultInstrumentFactory">defaultInstrumentFactory: <a href="instrument/InstrumentFactory.html" class="extype" name="kamon.metric.instrument.InstrumentFactory">InstrumentFactory</a></span>, <span name="refreshScheduler">refreshScheduler: <a href="instrument/RefreshScheduler.html" class="extype" name="kamon.metric.instrument.RefreshScheduler">RefreshScheduler</a></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.package@MetricsSettingsextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"> Configuration settings for the Metrics extension, as read from the <code>kamon.metric</code> configuration key.</p>
+    </li><li name="kamon.metric.MinMaxCounterRecorder" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MinMaxCounterRecorderextendsSingleInstrumentEntityRecorderwithProductwithSerializable"></a>
+      <a id="MinMaxCounterRecorder:MinMaxCounterRecorder"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="MinMaxCounterRecorder.html"><span class="name">MinMaxCounterRecorder</span></a><span class="params">(<span name="key">key: <a href="MetricKey.html" class="extype" name="kamon.metric.MetricKey">MetricKey</a></span>, <span name="instrument">instrument: <a href="instrument/MinMaxCounter.html" class="extype" name="kamon.metric.instrument.MinMaxCounter">MinMaxCounter</a></span>)</span><span class="result"> extends <span class="extype" name="kamon.metric.SingleInstrumentEntityRecorder">SingleInstrumentEntityRecorder</span> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.package@MinMaxCounterRecorderextendsSingleInstrumentEntityRecorderwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"> Entity recorder for a single MinMaxCounter instrument.</p>
+    </li><li name="kamon.metric.SegmentMetrics" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SegmentMetricsextendsGenericEntityRecorder"></a>
+      <a id="SegmentMetrics:SegmentMetrics"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="SegmentMetrics.html"><span class="name">SegmentMetrics</span></a><span class="result"> extends <a href="GenericEntityRecorder.html" class="extype" name="kamon.metric.GenericEntityRecorder">GenericEntityRecorder</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.package@SegmentMetricsextendsGenericEntityRecorder" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.SubscriptionFilter" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="SubscriptionFilterextendsAnyRef"></a>
+      <a id="SubscriptionFilter:SubscriptionFilter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="SubscriptionFilter.html"><span class="name">SubscriptionFilter</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.package@SubscriptionFilterextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.TickMetricSnapshotBuffer" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TickMetricSnapshotBufferextendsActor"></a>
+      <a id="TickMetricSnapshotBuffer:TickMetricSnapshotBuffer"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="TickMetricSnapshotBuffer.html"><span class="name">TickMetricSnapshotBuffer</span></a><span class="result"> extends <span class="extype" name="akka.actor.Actor">Actor</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.package@TickMetricSnapshotBufferextendsActor" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.TraceMetrics" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TraceMetricsextendsGenericEntityRecorder"></a>
+      <a id="TraceMetrics:TraceMetrics"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="TraceMetrics.html"><span class="name">TraceMetrics</span></a><span class="result"> extends <a href="GenericEntityRecorder.html" class="extype" name="kamon.metric.GenericEntityRecorder">GenericEntityRecorder</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.package@TraceMetricsextendsGenericEntityRecorder" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="kamon.metric.Entity" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Entity"></a>
+      <a id="Entity:Entity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Entity$.html"><span class="name">Entity</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.package@Entity" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.EntityRecorderFactory" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="EntityRecorderFactory"></a>
+      <a id="EntityRecorderFactory:EntityRecorderFactory"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="EntityRecorderFactory$.html"><span class="name">EntityRecorderFactory</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.package@EntityRecorderFactory" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricScaleDecorator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MetricScaleDecorator"></a>
+      <a id="MetricScaleDecorator:MetricScaleDecorator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="MetricScaleDecorator$.html"><span class="name">MetricScaleDecorator</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.package@MetricScaleDecorator" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.MetricsSettings" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MetricsSettings"></a>
+      <a id="MetricsSettings:MetricsSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="MetricsSettings$.html"><span class="name">MetricsSettings</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.package@MetricsSettings" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.SegmentMetrics" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SegmentMetrics"></a>
+      <a id="SegmentMetrics:SegmentMetrics"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="SegmentMetrics$.html"><span class="name">SegmentMetrics</span></a><span class="result"> extends <a href="EntityRecorderFactory.html" class="extype" name="kamon.metric.EntityRecorderFactory">EntityRecorderFactory</a>[<a href="SegmentMetrics.html" class="extype" name="kamon.metric.SegmentMetrics">SegmentMetrics</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.package@SegmentMetrics" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.SingleInstrumentEntityRecorder" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SingleInstrumentEntityRecorder"></a>
+      <a id="SingleInstrumentEntityRecorder:SingleInstrumentEntityRecorder"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="SingleInstrumentEntityRecorder$.html"><span class="name">SingleInstrumentEntityRecorder</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.package@SingleInstrumentEntityRecorder" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.SubscriptionFilter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SubscriptionFilter"></a>
+      <a id="SubscriptionFilter:SubscriptionFilter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="SubscriptionFilter$.html"><span class="name">SubscriptionFilter</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.package@SubscriptionFilter" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.SubscriptionsDispatcher" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SubscriptionsDispatcher"></a>
+      <a id="SubscriptionsDispatcher:SubscriptionsDispatcher"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="SubscriptionsDispatcher$.html"><span class="name">SubscriptionsDispatcher</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.package@SubscriptionsDispatcher" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.TickMetricSnapshotBuffer" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TickMetricSnapshotBuffer"></a>
+      <a id="TickMetricSnapshotBuffer:TickMetricSnapshotBuffer"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="TickMetricSnapshotBuffer$.html"><span class="name">TickMetricSnapshotBuffer</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.package@TickMetricSnapshotBuffer" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.TraceMetrics" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TraceMetrics"></a>
+      <a id="TraceMetrics:TraceMetrics"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="TraceMetrics$.html"><span class="name">TraceMetrics</span></a><span class="result"> extends <a href="EntityRecorderFactory.html" class="extype" name="kamon.metric.EntityRecorderFactory">EntityRecorderFactory</a>[<a href="TraceMetrics.html" class="extype" name="kamon.metric.TraceMetrics">TraceMetrics</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.package@TraceMetrics" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.instrument" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="instrument"></a>
+      <a id="instrument:instrument"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="instrument/package.html"><span class="name">instrument</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#kamon.metric.package@instrument" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

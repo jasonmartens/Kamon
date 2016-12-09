@@ -1,0 +1,10 @@
+[0m[[0minfo[0m] [0m[32mTraceContextManipulationSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mthe TraceContext api[0m[0m
+[0m[[0minfo[0m] [0m[32m- should allow starting a trace within a specified block of code, and only within that block of code[0m[0m
+[0m[[0minfo[0m] [0m[32m- should allow starting a trace within a specified block of code, providing a trace-token and only within that block of code[0m[0m
+[0m[[0minfo[0m] [0m[32m- should allow providing a TraceContext and make it available within a block of code[0m[0m
+[0m[[0minfo[0m] [0m[32m- should allow renaming a trace[0m[0m
+[0m[[0minfo[0m] [0m[32m- should allow tagging and untagging a trace[0m[0m
+[0m[[0minfo[0m] [0m[32m- should allow creating a segment within a trace[0m[0m
+[0m[[0minfo[0m] [0m[32m- should allow renaming a segment[0m[0m
+[0m[[0minfo[0m] [0m[32m- should allow tagging and untagging a segment[0m[0m

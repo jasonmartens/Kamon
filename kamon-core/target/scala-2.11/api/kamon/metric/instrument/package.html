@@ -1,0 +1,801 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>instrument - kamon.metric.instrument</title>
+          <meta name="description" content="instrument - kamon.metric.instrument" />
+          <meta name="keywords" content="instrument kamon.metric.instrument" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'kamon.metric.instrument.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img alt="Package" src="../../../lib/package_big.png" />
+        <p id="owner"><a href="../../package.html" class="extype" name="kamon">kamon</a>.<a href="../package.html" class="extype" name="kamon.metric">metric</a></p>
+        <h1>instrument</h1><span class="permalink">
+      <a href="../../../index.html#kamon.metric.instrument.package" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">instrument</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="kamon.metric.instrument.CollectionContext" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="CollectionContextextendsAnyRef"></a>
+      <a id="CollectionContext:CollectionContext"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="CollectionContext.html"><span class="name">CollectionContext</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#kamon.metric.instrument.package@CollectionContextextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.instrument.CompactHdrSnapshot" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CompactHdrSnapshotextendsHistogram.SnapshotwithProductwithSerializable"></a>
+      <a id="CompactHdrSnapshot:CompactHdrSnapshot"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="CompactHdrSnapshot.html"><span class="name">CompactHdrSnapshot</span></a><span class="params">(<span name="numberOfMeasurements">numberOfMeasurements: <span class="extype" name="scala.Long">Long</span></span>, <span name="compactRecords">compactRecords: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Long">Long</span>]</span>, <span name="unitMagnitude">unitMagnitude: <span class="extype" name="scala.Int">Int</span></span>, <span name="subBucketHalfCount">subBucketHalfCount: <span class="extype" name="scala.Int">Int</span></span>, <span name="subBucketHalfCountMagnitude">subBucketHalfCountMagnitude: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result"> extends <a href="Histogram$$Snapshot.html" class="extype" name="kamon.metric.instrument.Histogram.Snapshot">Snapshot</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#kamon.metric.instrument.package@CompactHdrSnapshotextendsHistogram.SnapshotwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.instrument.Counter" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="CounterextendsInstrument"></a>
+      <a id="Counter:Counter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Counter.html"><span class="name">Counter</span></a><span class="result"> extends <span class="extype" name="kamon.metric.instrument.Instrument">Instrument</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#kamon.metric.instrument.package@CounterextendsInstrument" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.instrument.CounterSnapshot" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CounterSnapshotextendsCounter.SnapshotwithProductwithSerializable"></a>
+      <a id="CounterSnapshot:CounterSnapshot"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="CounterSnapshot.html"><span class="name">CounterSnapshot</span></a><span class="params">(<span name="count">count: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result"> extends <a href="Counter$$Snapshot.html" class="extype" name="kamon.metric.instrument.Counter.Snapshot">Snapshot</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#kamon.metric.instrument.package@CounterSnapshotextendsCounter.SnapshotwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.instrument.DefaultInstrumentSettings" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DefaultInstrumentSettingsextendsProductwithSerializable"></a>
+      <a id="DefaultInstrumentSettings:DefaultInstrumentSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="DefaultInstrumentSettings.html"><span class="name">DefaultInstrumentSettings</span></a><span class="params">(<span name="histogram">histogram: <a href="InstrumentSettings.html" class="extype" name="kamon.metric.instrument.InstrumentSettings">InstrumentSettings</a></span>, <span name="minMaxCounter">minMaxCounter: <a href="InstrumentSettings.html" class="extype" name="kamon.metric.instrument.InstrumentSettings">InstrumentSettings</a></span>, <span name="gauge">gauge: <a href="InstrumentSettings.html" class="extype" name="kamon.metric.instrument.InstrumentSettings">InstrumentSettings</a></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#kamon.metric.instrument.package@DefaultInstrumentSettingsextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.instrument.DefaultRefreshScheduler" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DefaultRefreshSchedulerextendsRefreshScheduler"></a>
+      <a id="DefaultRefreshScheduler:DefaultRefreshScheduler"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="DefaultRefreshScheduler.html"><span class="name">DefaultRefreshScheduler</span></a><span class="result"> extends <a href="RefreshScheduler.html" class="extype" name="kamon.metric.instrument.RefreshScheduler">RefreshScheduler</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#kamon.metric.instrument.package@DefaultRefreshSchedulerextendsRefreshScheduler" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"> Default implementation of RefreshScheduler that simply uses an <span class="extype" name="akka.actor.Scheduler">akka.actor.Scheduler</span> to schedule tasks to be run
+ in the provided ExecutionContext.</p>
+    </li><li name="kamon.metric.instrument.DifferentialValueCollector" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="DifferentialValueCollectorextendsGauge.CurrentValueCollector"></a>
+      <a id="DifferentialValueCollector:DifferentialValueCollector"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="DifferentialValueCollector.html"><span class="name">DifferentialValueCollector</span></a><span class="result"> extends <a href="Gauge$$CurrentValueCollector.html" class="extype" name="kamon.metric.instrument.Gauge.CurrentValueCollector">CurrentValueCollector</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#kamon.metric.instrument.package@DifferentialValueCollectorextendsGauge.CurrentValueCollector" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"> Helper for cases in which a gauge shouldn't store the current value of a observed value but the difference between
+ the current observed value and the previously observed value.</p><div class="fullcomment"><div class="comment cmt"><p> Helper for cases in which a gauge shouldn't store the current value of a observed value but the difference between
+ the current observed value and the previously observed value. Should only be used if the observed value is always
+ increasing or staying steady, but is never able to decrease.</p><p> Note: The first time a value is collected, this wrapper will always return zero, afterwards, the difference between
+       the current value and the last value will be returned.
+</p></div></div>
+    </li><li name="kamon.metric.instrument.Gauge" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="GaugeextendsInstrument"></a>
+      <a id="Gauge:Gauge"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Gauge.html"><span class="name">Gauge</span></a><span class="result"> extends <span class="extype" name="kamon.metric.instrument.Instrument">Instrument</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#kamon.metric.instrument.package@GaugeextendsInstrument" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.instrument.HdrHistogram" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="HdrHistogramextendsModifiedAtomicHistogramwithHistogram"></a>
+      <a id="HdrHistogram:HdrHistogram"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="HdrHistogram.html"><span class="name">HdrHistogram</span></a><span class="result"> extends <a href="../../../org/HdrHistogram/ModifiedAtomicHistogram.html" class="extype" name="org.HdrHistogram.ModifiedAtomicHistogram">ModifiedAtomicHistogram</a> with <a href="Histogram.html" class="extype" name="kamon.metric.instrument.Histogram">Histogram</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#kamon.metric.instrument.package@HdrHistogramextendsModifiedAtomicHistogramwithHistogram" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"> This implementation is meant to be used for real time data collection where data snapshots are taken often over time.</p><div class="fullcomment"><div class="comment cmt"><p> This implementation is meant to be used for real time data collection where data snapshots are taken often over time.
+ The collect(..) operation extracts all the recorded values from the histogram and resets the counts, but still
+ leave it in a consistent state even in the case of concurrent modification while the snapshot is being taken.
+</p></div></div>
+    </li><li name="kamon.metric.instrument.Histogram" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="HistogramextendsInstrument"></a>
+      <a id="Histogram:Histogram"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Histogram.html"><span class="name">Histogram</span></a><span class="result"> extends <span class="extype" name="kamon.metric.instrument.Instrument">Instrument</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#kamon.metric.instrument.package@HistogramextendsInstrument" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.instrument.HistogramBackedGauge" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="HistogramBackedGaugeextendsGauge"></a>
+      <a id="HistogramBackedGauge:HistogramBackedGauge"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="HistogramBackedGauge.html"><span class="name">HistogramBackedGauge</span></a><span class="result"> extends <a href="Gauge.html" class="extype" name="kamon.metric.instrument.Gauge">Gauge</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#kamon.metric.instrument.package@HistogramBackedGaugeextendsGauge" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.instrument.InstrumentCustomSettings" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="InstrumentCustomSettingsextendsProductwithSerializable"></a>
+      <a id="InstrumentCustomSettings:InstrumentCustomSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="InstrumentCustomSettings.html"><span class="name">InstrumentCustomSettings</span></a><span class="params">(<span name="lowestDiscernibleValue">lowestDiscernibleValue: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Long">Long</span>]</span>, <span name="highestTrackableValue">highestTrackableValue: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Long">Long</span>]</span>, <span name="precision">precision: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Int">Int</span>]</span>, <span name="refreshInterval">refreshInterval: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.concurrent.duration.FiniteDuration">FiniteDuration</span>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#kamon.metric.instrument.package@InstrumentCustomSettingsextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.instrument.InstrumentFactory" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="InstrumentFactoryextendsProductwithSerializable"></a>
+      <a id="InstrumentFactory:InstrumentFactory"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="InstrumentFactory.html"><span class="name">InstrumentFactory</span></a><span class="params">(<span name="configurations">configurations: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <a href="InstrumentCustomSettings.html" class="extype" name="kamon.metric.instrument.InstrumentCustomSettings">InstrumentCustomSettings</a>]</span>, <span name="defaults">defaults: <a href="DefaultInstrumentSettings.html" class="extype" name="kamon.metric.instrument.DefaultInstrumentSettings">DefaultInstrumentSettings</a></span>, <span name="scheduler">scheduler: <a href="RefreshScheduler.html" class="extype" name="kamon.metric.instrument.RefreshScheduler">RefreshScheduler</a></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#kamon.metric.instrument.package@InstrumentFactoryextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.instrument.InstrumentSettings" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="InstrumentSettingsextendsProductwithSerializable"></a>
+      <a id="InstrumentSettings:InstrumentSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="InstrumentSettings.html"><span class="name">InstrumentSettings</span></a><span class="params">(<span name="dynamicRange">dynamicRange: <a href="Histogram$$DynamicRange.html" class="extype" name="kamon.metric.instrument.Histogram.DynamicRange">DynamicRange</a></span>, <span name="refreshInterval">refreshInterval: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.concurrent.duration.FiniteDuration">FiniteDuration</span>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#kamon.metric.instrument.package@InstrumentSettingsextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.instrument.InstrumentSnapshot" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="InstrumentSnapshotextendsAnyRef"></a>
+      <a id="InstrumentSnapshot:InstrumentSnapshot"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="InstrumentSnapshot.html"><span class="name">InstrumentSnapshot</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#kamon.metric.instrument.package@InstrumentSnapshotextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.instrument.InstrumentType" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="InstrumentTypeextendsAnyRef"></a>
+      <a id="InstrumentType:InstrumentType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="InstrumentType.html"><span class="name">InstrumentType</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#kamon.metric.instrument.package@InstrumentTypeextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.instrument.LazyRefreshScheduler" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="LazyRefreshSchedulerextendsRefreshScheduler"></a>
+      <a id="LazyRefreshScheduler:LazyRefreshScheduler"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="LazyRefreshScheduler.html"><span class="name">LazyRefreshScheduler</span></a><span class="result"> extends <a href="RefreshScheduler.html" class="extype" name="kamon.metric.instrument.RefreshScheduler">RefreshScheduler</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#kamon.metric.instrument.package@LazyRefreshSchedulerextendsRefreshScheduler" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"> RefreshScheduler implementation that accumulates all the scheduled actions until it is pointed to another refresh
+ scheduler.</p><div class="fullcomment"><div class="comment cmt"><p> RefreshScheduler implementation that accumulates all the scheduled actions until it is pointed to another refresh
+ scheduler. Once it is pointed, all subsequent calls to <code>schedule</code> will immediately be scheduled in the pointed
+ scheduler.
+</p></div></div>
+    </li><li name="kamon.metric.instrument.LongAdderCounter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LongAdderCounterextendsCounter"></a>
+      <a id="LongAdderCounter:LongAdderCounter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="LongAdderCounter.html"><span class="name">LongAdderCounter</span></a><span class="result"> extends <a href="Counter.html" class="extype" name="kamon.metric.instrument.Counter">Counter</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#kamon.metric.instrument.package@LongAdderCounterextendsCounter" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.instrument.Memory" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MemoryextendsUnitOfMeasurementwithProductwithSerializable"></a>
+      <a id="Memory:Memory"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Memory.html"><span class="name">Memory</span></a><span class="params">(<span name="factor">factor: <span class="extype" name="scala.Double">Double</span></span>, <span name="label">label: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="UnitOfMeasurement.html" class="extype" name="kamon.metric.instrument.UnitOfMeasurement">UnitOfMeasurement</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#kamon.metric.instrument.package@MemoryextendsUnitOfMeasurementwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"> UnitOfMeasurement representing computer memory space.</p>
+    </li><li name="kamon.metric.instrument.MinMaxCounter" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="MinMaxCounterextendsInstrument"></a>
+      <a id="MinMaxCounter:MinMaxCounter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="MinMaxCounter.html"><span class="name">MinMaxCounter</span></a><span class="result"> extends <span class="extype" name="kamon.metric.instrument.Instrument">Instrument</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#kamon.metric.instrument.package@MinMaxCounterextendsInstrument" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.instrument.PaddedMinMaxCounter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PaddedMinMaxCounterextendsMinMaxCounter"></a>
+      <a id="PaddedMinMaxCounter:PaddedMinMaxCounter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="PaddedMinMaxCounter.html"><span class="name">PaddedMinMaxCounter</span></a><span class="result"> extends <a href="MinMaxCounter.html" class="extype" name="kamon.metric.instrument.MinMaxCounter">MinMaxCounter</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#kamon.metric.instrument.package@PaddedMinMaxCounterextendsMinMaxCounter" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.instrument.RefreshScheduler" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="RefreshSchedulerextendsAnyRef"></a>
+      <a id="RefreshScheduler:RefreshScheduler"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="RefreshScheduler.html"><span class="name">RefreshScheduler</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#kamon.metric.instrument.package@RefreshSchedulerextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.instrument.Time" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TimeextendsUnitOfMeasurementwithProductwithSerializable"></a>
+      <a id="Time:Time"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Time.html"><span class="name">Time</span></a><span class="params">(<span name="factor">factor: <span class="extype" name="scala.Double">Double</span></span>, <span name="label">label: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="UnitOfMeasurement.html" class="extype" name="kamon.metric.instrument.UnitOfMeasurement">UnitOfMeasurement</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#kamon.metric.instrument.package@TimeextendsUnitOfMeasurementwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"> UnitOfMeasurement representing time.</p>
+    </li><li name="kamon.metric.instrument.UnitOfMeasurement" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="UnitOfMeasurementextendsAnyRef"></a>
+      <a id="UnitOfMeasurement:UnitOfMeasurement"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="UnitOfMeasurement.html"><span class="name">UnitOfMeasurement</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#kamon.metric.instrument.package@UnitOfMeasurementextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"> A UnitOfMeasurement implementation describes the magnitude of a quantity being measured, such as Time and computer
+ Memory space.</p><div class="fullcomment"><div class="comment cmt"><p> A UnitOfMeasurement implementation describes the magnitude of a quantity being measured, such as Time and computer
+ Memory space. Kamon uses UnitOfMeasurement implementations just as a informative companion to metrics inside entity
+ recorders and might be used to scale certain kinds of measurements in metric backends.
+</p></div></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="kamon.metric.instrument.CollectionContext" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CollectionContext"></a>
+      <a id="CollectionContext:CollectionContext"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="CollectionContext$.html"><span class="name">CollectionContext</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#kamon.metric.instrument.package@CollectionContext" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.instrument.CompactHdrSnapshot" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CompactHdrSnapshot"></a>
+      <a id="CompactHdrSnapshot:CompactHdrSnapshot"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="CompactHdrSnapshot$.html"><span class="name">CompactHdrSnapshot</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#kamon.metric.instrument.package@CompactHdrSnapshot" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.instrument.Counter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Counter"></a>
+      <a id="Counter:Counter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Counter$.html"><span class="name">Counter</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#kamon.metric.instrument.package@Counter" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.instrument.DefaultInstrumentSettings" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DefaultInstrumentSettings"></a>
+      <a id="DefaultInstrumentSettings:DefaultInstrumentSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="DefaultInstrumentSettings$.html"><span class="name">DefaultInstrumentSettings</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#kamon.metric.instrument.package@DefaultInstrumentSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.instrument.DefaultRefreshScheduler" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DefaultRefreshScheduler"></a>
+      <a id="DefaultRefreshScheduler:DefaultRefreshScheduler"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="DefaultRefreshScheduler$.html"><span class="name">DefaultRefreshScheduler</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#kamon.metric.instrument.package@DefaultRefreshScheduler" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.instrument.DifferentialValueCollector" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DifferentialValueCollector"></a>
+      <a id="DifferentialValueCollector:DifferentialValueCollector"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="DifferentialValueCollector$.html"><span class="name">DifferentialValueCollector</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#kamon.metric.instrument.package@DifferentialValueCollector" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.instrument.Gauge" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Gauge"></a>
+      <a id="Gauge:Gauge"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Gauge$.html"><span class="name">Gauge</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#kamon.metric.instrument.package@Gauge" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.instrument.HdrHistogram" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="HdrHistogram"></a>
+      <a id="HdrHistogram:HdrHistogram"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="HdrHistogram$.html"><span class="name">HdrHistogram</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#kamon.metric.instrument.package@HdrHistogram" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.instrument.Histogram" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Histogram"></a>
+      <a id="Histogram:Histogram"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Histogram$.html"><span class="name">Histogram</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#kamon.metric.instrument.package@Histogram" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.instrument.InstrumentCustomSettings" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="InstrumentCustomSettings"></a>
+      <a id="InstrumentCustomSettings:InstrumentCustomSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="InstrumentCustomSettings$.html"><span class="name">InstrumentCustomSettings</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#kamon.metric.instrument.package@InstrumentCustomSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.instrument.InstrumentSettings" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="InstrumentSettings"></a>
+      <a id="InstrumentSettings:InstrumentSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="InstrumentSettings$.html"><span class="name">InstrumentSettings</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#kamon.metric.instrument.package@InstrumentSettings" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.instrument.InstrumentTypes" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="InstrumentTypes"></a>
+      <a id="InstrumentTypes:InstrumentTypes"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="InstrumentTypes$.html"><span class="name">InstrumentTypes</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#kamon.metric.instrument.package@InstrumentTypes" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.instrument.Memory" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Memory"></a>
+      <a id="Memory:Memory"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Memory$.html"><span class="name">Memory</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#kamon.metric.instrument.package@Memory" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.instrument.MinMaxCounter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MinMaxCounter"></a>
+      <a id="MinMaxCounter:MinMaxCounter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="MinMaxCounter$.html"><span class="name">MinMaxCounter</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#kamon.metric.instrument.package@MinMaxCounter" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.instrument.Time" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Time"></a>
+      <a id="Time:Time"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Time$.html"><span class="name">Time</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#kamon.metric.instrument.package@Time" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="kamon.metric.instrument.UnitOfMeasurement" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="UnitOfMeasurement"></a>
+      <a id="UnitOfMeasurement:UnitOfMeasurement"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="UnitOfMeasurement$.html"><span class="name">UnitOfMeasurement</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#kamon.metric.instrument.package@UnitOfMeasurement" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

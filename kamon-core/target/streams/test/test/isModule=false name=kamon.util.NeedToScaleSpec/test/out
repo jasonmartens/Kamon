@@ -1,0 +1,5 @@
+[0m[[0minfo[0m] [0m[32mNeedToScaleSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mNeedToScale[0m[0m
+[0m[[0minfo[0m] [0m[32m- should extract time unit to scale to from config[0m[0m
+[0m[[0minfo[0m] [0m[32m- should extract memory unit to scale to from config[0m[0m
+[0m[[0minfo[0m] [0m[32m- should extract nothing if config has no proper keys[0m[0m

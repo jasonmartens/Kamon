@@ -1,0 +1,13 @@
+[0m[[0minfo[0m] [0m[32mUnitOfMeasurementSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mTime unit[0m[0m
+[0m[[0minfo[0m] [0m[32m- should resolve Time Unit by valid name[0m[0m
+[0m[[0minfo[0m] [0m[32m- should fail to resolve Time Unit by invalid name[0m[0m
+[0m[[0minfo[0m] [0m[32m- should scale time properly[0m[0m
+[0m[[0minfo[0m] [0m[32m- should allow scale only time[0m[0m
+[0m[[0minfo[0m] [0m[32mMemory unit[0m[0m
+[0m[[0minfo[0m] [0m[32m- should resolve Memory Unit by valid name[0m[0m
+[0m[[0minfo[0m] [0m[32m- should fail to resolve Memory Unit by invalid name[0m[0m
+[0m[[0minfo[0m] [0m[32m- should scale memory properly[0m[0m
+[0m[[0minfo[0m] [0m[32m- should allow scale only memory[0m[0m
+[0m[[0minfo[0m] [0m[32mUnknown unit[0m[0m
+[0m[[0minfo[0m] [0m[32m- should allow scale only Unknown[0m[0m

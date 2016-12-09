@@ -1,0 +1,4 @@
+[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(/home/diego/gitHub/Kamon/kamon-core/src/main/resources/reference.conf,/home/diego/gitHub/Kamon/kamon-core/target/scala-2.12/classes/reference.conf)[0m
+[0m[[0mdebug[0m] [0m	(/home/diego/gitHub/Kamon/kamon-core/src/main/resources/META-INF,/home/diego/gitHub/Kamon/kamon-core/target/scala-2.12/classes/META-INF)[0m
+[0m[[0mdebug[0m] [0m	(/home/diego/gitHub/Kamon/kamon-core/src/main/resources/META-INF/aop.xml,/home/diego/gitHub/Kamon/kamon-core/target/scala-2.12/classes/META-INF/aop.xml)[0m

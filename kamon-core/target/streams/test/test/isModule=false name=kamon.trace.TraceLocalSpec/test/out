@@ -1,0 +1,10 @@
+[0m[[0minfo[0m] [0m[32mTraceLocalSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mthe TraceLocal storage[0m[0m
+[0m[[0minfo[0m] [0m[32m- should allow storing and retrieving values[0m[0m
+[0m[[0minfo[0m] [0m[32m- should return None when retrieving a non existent key[0m[0m
+[0m[[0minfo[0m] [0m[32m- should throws an exception when trying to get a non existent key[0m[0m
+[0m[[0minfo[0m] [0m[32m- should return the given value when retrieving a non existent key[0m[0m
+[0m[[0minfo[0m] [0m[32m- should return None when retrieving a key without a current TraceContext[0m[0m
+[0m[[0minfo[0m] [0m[32m- should be attached to the TraceContext when it is propagated[0m[0m
+[0m[[0minfo[0m] [0m[32m- should allow retrieve a value from the MDC when was created a key with AvailableToMdc(cool-key)[0m[0m
+[0m[[0minfo[0m] [0m[32m- should allow retrieve a value from the MDC when was created a key with AvailableToMdc.storeForMdc(String, String)[0m[0m

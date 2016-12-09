@@ -1,0 +1,4 @@
+[0m[[0minfo[0m] [0m[32mTickMetricSnapshotBufferSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mthe TickMetricSnapshotBuffer[0m[0m
+[0m[[0minfo[0m] [0m[32m- should merge TickMetricSnapshots received until the flush timeout is reached and fix the from/to fields[0m[0m
+[0m[[0minfo[0m] [0m[32m- should merge empty and non-empty snapshots[0m[0m

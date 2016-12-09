@@ -1,0 +1,6 @@
+[0m[[0minfo[0m] [0m[32mMdcKeysSupportSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mRunning code with MDC support[0m[0m
+[0m[[0minfo[0m] [0m[32m  should add nothing to the MDC[0m[0m
+[0m[[0minfo[0m] [0m[32m  - when the trace context is empty[0m[0m
+[0m[[0minfo[0m] [0m[32m  should add the trace token and name to the context[0m[0m
+[0m[[0minfo[0m] [0m[32m  - when the trace context is not empty[0m[0m

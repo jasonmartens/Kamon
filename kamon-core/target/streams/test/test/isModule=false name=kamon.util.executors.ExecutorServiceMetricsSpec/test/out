@@ -1,0 +1,7 @@
+[0m[[0minfo[0m] [0m[32mExecutorServiceMetricsSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mthe ExecutorServiceMetrics[0m[0m
+[0m[[0minfo[0m] [0m[32m- should register a SingleThreadPool, collect their metrics and remove it[0m[0m
+[0m[[0minfo[0m] [0m[32m- should register a ThreadPoolExecutor, collect their metrics and remove it[0m[0m
+[0m[[0minfo[0m] [0m[32m- should register a ScheduledThreadPoolExecutor, collect their metrics and remove it[0m[0m
+[0m[[0minfo[0m] [0m[32m- should register a Java ForkJoinPool, collect their metrics and remove it[0m[0m
+[0m[[0minfo[0m] [0m[32m- should register a Scala ForkJoinPool, collect their metrics and remove it[0m[0m

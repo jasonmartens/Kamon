@@ -1,0 +1,7 @@
+[0m[[0minfo[0m] [0m[32mTraceMetricsSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mthe TraceMetrics[0m[0m
+[0m[[0minfo[0m] [0m[32m- should record the elapsed time between a trace creation and finish[0m[0m
+[0m[[0minfo[0m] [0m[32m- should record the elapsed time for segments that occur inside a given trace[0m[0m
+[0m[[0minfo[0m] [0m[32m- should record the elapsed time for segments that finish after their correspondent trace has finished[0m[0m
+[0m[[0minfo[0m] [0m[32m- should record the elapsed time between a trace creation and finish with an error[0m[0m
+[0m[[0minfo[0m] [0m[32m- should record the elapsed time for segments that finish with an error and that occur inside a given trace[0m[0m

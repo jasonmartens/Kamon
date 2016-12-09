@@ -1,0 +1,21 @@
+#Successful Tests
+#Fri Dec 09 18:26:30 ART 2016
+kamon.util.GlobPathFilterSpec=1481318770084
+kamon.metric.instrument.HistogramSpec=1481318782827
+kamon.metric.TickMetricSnapshotBufferSpec=1481318776482
+kamon.trace.TraceLocalSpec=1481318765308
+kamon.trace.logging.MdcKeysSupportSpec=1481318770289
+kamon.metric.instrument.UnitOfMeasurementSpec=1481318776616
+kamon.metric.instrument.CounterSpec=1481318776632
+kamon.metric.SubscriptionsProtocolSpec=1481318784992
+kamon.util.executors.ExecutorServiceMetricsSpec=1481318776710
+kamon.trace.SimpleTraceSpec=1481318790923
+kamon.metric.MetricScaleDecoratorSpec=1481318776783
+kamon.metric.instrument.MinMaxCounterSpec=1481318769992
+kamon.util.NeedToScaleSpec=1481318776526
+kamon.metric.SimpleMetricsSpec=1481318770247
+kamon.trace.TraceContextManipulationSpec=1481318781059
+kamon.trace.SamplerSpec=1481318770156
+kamon.util.RegexPathFilterSpec=1481318776539
+kamon.metric.TraceMetricsSpec=1481318776861
+kamon.metric.instrument.GaugeSpec=1481318780940

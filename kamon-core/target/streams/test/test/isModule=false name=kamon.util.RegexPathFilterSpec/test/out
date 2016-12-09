@@ -1,0 +1,5 @@
+[0m[[0minfo[0m] [0m[32mRegexPathFilterSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mThe RegexPathFilter[0m[0m
+[0m[[0minfo[0m] [0m[32m- should match a single expression[0m[0m
+[0m[[0minfo[0m] [0m[32m- should match arbitray expressions ending with wildcard[0m[0m
+[0m[[0minfo[0m] [0m[32m- should match numbers[0m[0m

@@ -1,0 +1,7 @@
+[0m[[0minfo[0m] [0m[32mSimpleTraceSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mthe simple tracing[0m[0m
+[0m[[0minfo[0m] [0m[32m- should send a TraceInfo when the trace has finished and all segments are finished[0m[0m
+[0m[[0minfo[0m] [0m[32m- should send a TraceInfo when the trace has finished with error and all segments are finished[0m[0m
+[0m[[0minfo[0m] [0m[32m- should send a TraceInfo when the trace has finished with error and all segments are finished with error[0m[0m
+[0m[[0minfo[0m] [0m[32m- should send a TraceInfo when the trace has finished and all segments are finished and both contains tags[0m[0m
+[0m[[0minfo[0m] [0m[32m- should incubate the tracing context if there are open segments after finishing[0m[0m

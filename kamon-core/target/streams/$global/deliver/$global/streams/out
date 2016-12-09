@@ -1,0 +1,4 @@
+[0m[[0minfo[0m] [0m:: delivering :: io.kamon#core_2.12;0.7.0-SNAPSHOT :: 0.7.0-SNAPSHOT :: integration :: Fri Dec 09 18:35:41 ART 2016[0m
+[0m[[0mdebug[0m] [0m	options = status=integration pubdate=Fri Dec 09 18:35:41 ART 2016 validate=true resolveDynamicRevisions=true merge=true resolveId=null pubBranch=null[0m
+[0m[[0minfo[0m] [0m	delivering ivy file to /home/diego/gitHub/Kamon/kamon-core/target/scala-2.12/ivy-0.7.0-SNAPSHOT.xml[0m
+[0m[[0mdebug[0m] [0m	deliver done (38ms)[0m

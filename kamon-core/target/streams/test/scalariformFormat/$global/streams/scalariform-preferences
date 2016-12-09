@@ -1,0 +1,24 @@
+Ò#Thu Dec 08 18:31:58 ART 2016
+alignParameters=false
+formatXml=true
+spacesAroundMultiImports=false
+preserveDanglingCloseParenthesis=false
+spaceInsideBrackets=false
+indentWithTabs=false
+spaceInsideParentheses=false
+multilineScaladocCommentsStartOnFirstLine=false
+alignSingleLineCaseStatements=true
+compactStringConcatenation=false
+placeScaladocAsterisksBeneathSecondAsterisk=false
+indentPackageBlocks=true
+compactControlReadability=false
+danglingCloseParenthesis=Force
+spacesWithinPatternBinders=true
+alignSingleLineCaseStatements.maxArrowIndent=40
+doubleIndentClassDeclaration=true
+preserveSpaceBeforeArguments=false
+spaceBeforeColon=false
+alignArguments=false
+rewriteArrowSymbols=true
+indentLocalDefs=false
+indentSpaces=2
